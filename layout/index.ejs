@@ -1,0 +1,20 @@
+<div class="random-center">
+  <div class="random-index">
+    <div class="center-field">
+      <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg" width=120 height=120>
+    </div>
+    <div class="center-field">
+      <div class="title"><%- config.title %></div>
+    </div>
+    <hr >
+    <div class="center-field">
+      <ul>
+        <% for (var i in theme.menu) { %>
+          <% if(theme.menu[i] != '/') { %>
+            <li><a href="<%= theme.menu[i] %>"><%= i %></a></li>
+          <% } %>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</div>
