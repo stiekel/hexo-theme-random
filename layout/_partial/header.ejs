@@ -1,0 +1,17 @@
+<header>
+  <div class="center-field content">
+    <div class="left">
+      <h1 class="title"><a href="/"><%= config.title %></a></h1>
+    </div>
+    <div class="right">
+      <nav>
+        <% for(var i in theme.menu) { %>
+          <a href="<%= theme.menu[i] %>"><%= i %></a>
+        <% } %>
+        <% if(theme.rss) { %>
+          <a href="<%= theme.rss %>"><%- __('rss_title') %></a>
+        <% } %>
+      </nav>
+    </div>
+  </div>
+</header>
