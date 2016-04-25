@@ -24,12 +24,26 @@ body {
   opacity: 0.95;
 }
 
+.random-index a {
+  text-transform: uppercase;
+}
+
 .title {
   font-size: 28px;
   font-weight: 300px;
   font-color: #34495e;
   text-shadow: 0 2px rgb(127, 140, 141);
   padding-bottom: 10px;
+}
+
+.title a {
+  color: #34495e;
+}
+
+.title a:hover {
+  color: #34495e;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .random-index ul {
@@ -42,9 +56,8 @@ body {
   padding-left: 5px;
 }
 
- a {
+a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #3A539B;
 }
 
@@ -91,19 +104,44 @@ header .right {
   line-height: 48px;
 }
 
-header .content {
+header .content, footer .content {
   background-color: #EEEEEE;
   opacity: 0.95;
 }
 
+header .right {
+  text-align: right;
+}
+
+header a {
+  text-transform: capitalize;
+}
+
 .left {
   float: left;
+  display: block;
 }
 
 .right {
-  text-align: right;
+  /*text-align: right;*/
+}
+
+.clear {
+  clear: both;
 }
 
 nav a {
   margin-left: 10px;
 }
+
+.archive li {
+  padding-left: 30px;
+  list-style: none;
+}
+
+.archive li .left {
+  display: inline;
+  width: 40px;
+  padding-right: 5px;
+  text-align: right;
+} 
