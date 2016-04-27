@@ -1,0 +1,25 @@
+
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  Home: /
+  Archives: /archives
+  Tags: /tags
+  Categories: /categories
+  About: /about
+
+# Miscelaneous
+favicon: /favicon.ico
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/random.css
+- /css/vegas.min.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/zepto.min.js
+- /js/vegas.min.js
+- /js/random.js
