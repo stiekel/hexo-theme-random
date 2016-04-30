@@ -13,21 +13,7 @@
       <ul>
         {% for key in Object.keys(theme.menu)  %}
           {% if theme.menu[key] != '/'  %}
-            <li><a href="{{ theme.menu[key] }}">
-              {% if key.toLowerCase() === 'archives' %}
-                {{__('archive_title') }}
-              {% elseif key.toLowerCase() === 'tags' %}
-                {{__('tag_title') }}
-              {% elseif key.toLowerCase() === 'categories' %}
-                {{__('category_title') }}
-              {% elseif key.toLowerCase() === 'about' %}
-                {{__('about_title') }}
-              {% elseif key.toLowerCase() === 'rss' %}
-                {{__('rss_title') }}
-              {% else %}
-                {{ key }}
-              {% endif %}
-            </a></li>
+            <li><a href="{{ theme.menu[key] }}">{{ key }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
