@@ -3,7 +3,7 @@
 {% block body %}
   <div id="tag">
     <h1>{{ page.tag }}</h1>
-    {% for postItem in page.posts.toArray() %}
+    {% for article in page.posts.toArray() %}
       <div class="tag-item">
         {% if article.link %}
           <a href="{{ url_for(article.link) }}" target="_blank">
