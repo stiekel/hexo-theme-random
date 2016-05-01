@@ -1,6 +1,6 @@
 {% include 'head.swig' %}
 <body>
-<div id="container">
+<div id="container" class="hide-area">
   <div id="menu-outer">
     <div id="menu-inner">
       <div class="brand">

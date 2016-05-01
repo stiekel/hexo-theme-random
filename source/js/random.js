@@ -10,4 +10,16 @@ $(function(){
   $('body').vegas({
     slides: slides
   });
+
+  var hideAll = false;
+  $("#btn-view").on('click', function(){
+    if(hideAll) {
+      $(".hide-area").show();
+      $("#btn-view").html('Hide');
+    } else {
+      $(".hide-area").hide();
+      $("#btn-view").html('Show');
+    }
+    hideAll = !hideAll;
+  });
 });
