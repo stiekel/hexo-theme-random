@@ -4,6 +4,11 @@ tag_title: 标签
 rss_title: RSS
 excerpt_title: 阅读全文
 
+total_title: 共
+post_title: 文章
+posts_title: 文章
+not_post: 没有写文章
+
 comment: 评论
 
 prev: 上一页

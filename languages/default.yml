@@ -4,6 +4,11 @@ tag_title: Tag
 rss_title: RSS
 excerpt_title: Read More
 
+total_title: Total
+post_title: post
+posts_title: posts
+not_post: Wrote nothing
+
 comment: Comments
 
 prev: Prev

@@ -39,7 +39,7 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -360px;
+  margin-left: - (desktopWidth / 2);
   margin-top: -200px;
   width: desktopWidth;
 }
@@ -218,3 +218,27 @@ ul.category-list li a
 ul.category-list li a:hover
   background-color: #DDD;
   text-decoration: none;
+
+// archive start
+.archive-year-title
+  margin: 10px 0 5px 0;
+
+.posts-count
+  font-size: 12px;
+  font-weight: normal;
+  color: #888;
+  font-style: italic;
+
+.recent-post-item
+  margin-left: 20px;
+  padding-left: 5px;
+  border-left: 2px #BBB solid;
+
+.recent-post-item:hover
+  border-left: 4px #1E8BC3 solid;
+// archive end8
+
+.recent-post-item time
+  font-style: italic;
+  color: #999;
+  font-size: 12px;
