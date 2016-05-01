@@ -9,7 +9,7 @@
     {% elif 'tags' === page.type %}
       <h1 class="center-title">{{ page_title || __('tag_title') }}</h1>
       <div class="tag-cloud-tags">
-        {{ tagcloud({min_font: 12, max_font: 40, amount: 200, color: true, start_color: '#ccc', end_color: '#666'}) }}
+        {{ tagcloud({min_font: 12, max_font: 40, amount: 200, color: true, start_color: '#999', end_color: '#444'}) }}
       </div>
     {% else %}
     {% autoescape false %}{{page.content }}{% endautoescape %}
