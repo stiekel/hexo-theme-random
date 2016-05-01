@@ -5,7 +5,7 @@
     {% set page_title = page.title %}
     {% if 'categories' === page.type %}
       <h1 class="center-title">{{ page_title || __('category_title') }}</h1>
-      {{ list_categories({ show_count: false }) }}
+      {{ list_categories() }}
     {% elif 'tags' === page.type %}
       <h1 class="center-title">{{ page_title || __('tag_title') }}</h1>
       <div class="tag-cloud-tags">
