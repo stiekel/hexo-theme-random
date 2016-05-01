@@ -20,17 +20,16 @@ a:hover {
 
 #container {
   width: desktopWidth;
-  background-color: #fff;
   position: absolute;
   left: 50%;
   margin-left: - (desktopWidth / 2);
 }
 
-#menu-outer, #bottom-outer {
-  opacity: 0.85;
-}
+#menu-outer, #content-outer, #bottom-outer
+  background-color: #fff;
 
-#content-outer {
+#menu-outer, #bottom-outer {
+  opacity: 0.95;
 }
 
 .random-center {
@@ -106,9 +105,63 @@ a:hover {
   box-shadow: 0 0px 3px 1px rgba(0,0,0,0.3);
 }
 
-.content {
-  width: 840px;
+// menu start
+#menu-outer
+  opacity: 0.85;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+
+#menu-inner
+  line-height: 50px;
+  height: 50px;
+  width: desktopWidth - 20px;
+  text-align: center;
+  display: table-cell;
+  margin: 0 auto;
+  height: 20px;
+  padding: 0px 10px 0 10px;
+
+#menu-inner .left
+  float: left;
+
+#menu-inner .brand
+  margin: 0px;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+
+#menu-inner #homelink
+  line-height: 32px;
+  display: inline-block;
+
+#menu-inner .brand a
+  top: 0;
+  color: #000;
+
+#menu-inner .brand a:hover
   background-color: #fff;
-  margin-top: 0px;
-  padding: 40px 20px 40px 20px; 
-}
+  text-decoration: none;
+
+#menu-inner ul
+  line-style: none;
+  display: inline-block;
+  float: right;
+  margin: 0px;
+
+#menu-inner ul li
+  display: inline;
+
+#menu-outer #avatar
+  border-radius: 50%;
+  border: 2px wihte solid;
+  box-shadow: 0 0px 3px 1px rgba(0,0,0,0.3);
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  
+// menu end
+
+#content-outer
+  margin-top: 50px;

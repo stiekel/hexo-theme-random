@@ -3,9 +3,17 @@
 <div id="container">
   <div id="menu-outer">
     <div id="menu-inner">
+      <div class="brand">
+        <a href="{{ url_for('/') }}">
+          <img id="avatar" src="{{theme.avatar}}"/>
+          <div id="homelink">{{config.title}}</div>
+        </a>
+      </div>
+      <ul>
       {% for key in Object.keys(theme.menu) %}
-        <a href="{{ theme.menu[key] }}">{{ key }}</a>
+        <li><a href="{{ theme.menu[key] }}">{{ key }}</a></li>
       {% endfor %}
+      </ul>
     </div>
   </div>
 
