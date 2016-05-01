@@ -4,7 +4,7 @@
   <div id="category">
     <h1>{{ page.category }}</h1>
     {% for postItem in page.posts.toArray() %}
-      <div class="category-item">
+      <div class="category-item post-title-item">
         {% if postItem.link %}
           <a href="{{ url_for(postItem.link) }}" target="_blank">
             {{ postItem.title || 'No Title' }}

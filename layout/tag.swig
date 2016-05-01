@@ -4,7 +4,7 @@
   <div id="tag">
     <h1>{{ page.tag }}</h1>
     {% for article in page.posts.toArray() %}
-      <div class="tag-item">
+      <div class="tag-item post-title-item">
         {% if article.link %}
           <a href="{{ url_for(article.link) }}" target="_blank">
             {{ article.title || 'No Title' }}

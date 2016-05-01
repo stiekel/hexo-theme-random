@@ -45,7 +45,7 @@
         {% endif %}
         </h3>
       {% endif %}
-      <div class="recent-post-item">
+      <div class="post-title-item">
         <a href="{{ config.root }}{{ postItem.path }}">{{ postItem.title }}</a>
         {% if postItem.date %}
           <time datetime="{{ postItem.date.toJSON() }}">
