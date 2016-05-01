@@ -27,11 +27,21 @@
   <div id="bottom-outer">
     <div id="bottom-inner">
       Site by {{ config.author }} using
-      <a href="http://hexo.io">hexo blog framework</a>.
+      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
       <br>
-      <a href="{{ config.root }}">Home</a>
+      {% if config.since %}
+        &copy;
+        {% set thisYear = date(Date.now(), 'YYYY') %}
+
+        {{config.since}}
+        {% if thisYear != config.since %}
+         - {{ date(Date.now(), 'YYYY') }}
+        {% endif %}
+      {% endif %}
     </div>
   </div>
+  </div>
+
 </div>
 
 {% include 'footer.swig' %}

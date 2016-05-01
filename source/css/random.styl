@@ -1,5 +1,6 @@
 desktopWidth = 720px
 mobildWidth = 100%
+opacityValue = 0.85
 body {
   background-color: #BDC3C7;
   margin: 0px;
@@ -25,11 +26,11 @@ a:hover {
   margin-left: - (desktopWidth / 2);
 }
 
-#menu-outer, #content-outer, #bottom-outer
+#menu-outer, #container
   background-color: #fff;
 
-#menu-outer, #bottom-outer {
-  opacity: 0.95;
+#menu-outer, #bottom-outer, #random-index {
+  opacity: opacityValue;
 }
 
 .random-center {
@@ -46,7 +47,6 @@ a:hover {
   text-align: center;
   border-radius: 10px;
   background-color: #ecf0f1;
-  opacity: 0.85;
 }
 
 #random-index a {
@@ -107,7 +107,6 @@ a:hover {
 
 // menu start
 #menu-outer
-  opacity: 0.85;
   margin: 0px;
   padding: 0px;
   position: fixed;
@@ -163,5 +162,12 @@ a:hover {
   
 // menu end
 
-#content-outer
+#bottom-outer
+  color: #888;
+  text-align: center;
+  padding: 40px 10px 10px 10px;
+  font-size: 12px;
+  background-color: #fff;
+
+#container
   margin-top: 50px;
