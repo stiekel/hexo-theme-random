@@ -24,6 +24,9 @@
       {% if page.comments && (theme.duoshuo_shortname || config.duoshuo_shortname) %}
       <div class="ds-thread" data-thread-key="{{ page.path }}" data-title="{{ page.title }}" data-url="{{ page.permalink }}"></div>
       {% endif %}
+      {% if config.disqus_shortname || theme.disqus_shortname %}
+      <div id="disqus_thread"></div>
+      {% endif %}
     </div>
   </div>
 
@@ -48,5 +51,8 @@
 </div>
 {% if page.comments && (theme.duoshuo_shortname || config.duoshuo_shortname) %}
   {% include 'duoshuo.swig' %}
+{% endif %}
+{% if config.disqus_shortname || theme.disqus_shortname %}
+  {% include 'disqus.swig' %}
 {% endif %}
 {% include 'footer.swig' %}
