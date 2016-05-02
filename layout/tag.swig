@@ -10,7 +10,7 @@
             {{ article.title || 'No Title' }}
           </a>
         {% else %}
-          <a href="{{ url_for(article.link) }}">
+          <a href="{{ url_for(article.path) }}">
             {{ article.title || 'No Title' }}
           </a>
         {% endif %}
