@@ -21,7 +21,7 @@ stylesheets:
 
 # scripts loaded in the end of the body
 scripts:
-- /js/zepto.min.js
+- /js/jquery-2.2.3.min.js
 - /js/vegas.min.js
 - /js/random.js
 - /js/highlight.pack.js
