@@ -21,6 +21,9 @@
     <div id="content-inner">
       {# {% autoescape false %}{{ body }}{% endautoescape %} #}
       {% block body %}{% endblock %}
+      {% if page.comments && (theme.duoshuo_shortname || config.duoshuo_shortname) %}
+      <div class="ds-thread" data-thread-key="{{ page.path }}" data-title="{{ page.title }}" data-url="{{ page.permalink }}"></div>
+      {% endif %}
     </div>
   </div>
 
@@ -43,5 +46,7 @@
   </div>
 
 </div>
-
+{% if theme.duoshuo_shortname || config.duoshuo_shortname %}
+  {% include 'duoshuo.swig' %}
+{% endif %}
 {% include 'footer.swig' %}
