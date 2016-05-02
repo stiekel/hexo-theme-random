@@ -22,4 +22,10 @@ $(function(){
     }
     hideAll = !hideAll;
   });
+  hljs.configure({useBR: true});
+  hljs.initHighlightingOnLoad();
+  $(".highlight").each(function(i, block) {
+    console.log('i:', i, 'block:', block);
+    hljs.highlightBlock(block);
+  });
 });

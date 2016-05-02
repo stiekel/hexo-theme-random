@@ -17,11 +17,13 @@ favicon: /favicon.ico
 stylesheets:
 - /css/random.css
 - /css/vegas.min.css
+- /css/highlight-railscasts.css
 
 # scripts loaded in the end of the body
 scripts:
 - /js/zepto.min.js
 - /js/vegas.min.js
 - /js/random.js
+- /js/highlight.pack.js
 
 avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg

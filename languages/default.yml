@@ -13,3 +13,6 @@ comment: Comments
 
 prev: Prev
 next: Next
+
+created_at: Created at
+updated_at: Updated at
