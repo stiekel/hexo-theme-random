@@ -11,6 +11,7 @@ $(function(){
     slides: slides
   });
 
+  // hide / show content button
   var hideAll = false;
   $("#btn-view").on('click', function(){
     if(hideAll) {
@@ -22,6 +23,8 @@ $(function(){
     }
     hideAll = !hideAll;
   });
+
+  // code highlight
   hljs.configure({useBR: true});
   hljs.initHighlightingOnLoad();
   $(".highlight").each(function(i, block) {

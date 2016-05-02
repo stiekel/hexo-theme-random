@@ -5,6 +5,15 @@
     <script src="{{ url }}"></script>
   {% endfor %}
 {% endif %}
-
+{% if theme.fancybox || config.fancybox %}
+  <script>
+  // fancybox
+  $("a").fancybox({
+    helpers:{
+      title: { type: 'float'}
+    }
+  });
+  </script>
+{% endif %}
 </body>
 </html>

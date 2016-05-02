@@ -18,6 +18,7 @@ stylesheets:
 - /css/random.css
 - /css/vegas.min.css
 - /css/highlight-railscasts.css
+- /css/jquery.fancybox.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -25,5 +26,10 @@ scripts:
 - /js/vegas.min.js
 - /js/random.js
 - /js/highlight.pack.js
+- /js/jquery.mousewheel.pack.js
+- /js/jquery.fancybox.pack.js
 
 avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
+
+# do not like fancybox, set this as false, this will turn it off
+fancybox: true
