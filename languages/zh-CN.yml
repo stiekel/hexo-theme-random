@@ -14,5 +14,12 @@ comment: 评论
 prev: 上一页
 next: 下一页
 
+prev_post: 上一篇
+next_post: 下一篇
+
+page_number_part1: 第 
+page_number_part2:  页，共 
+page_number_part3:  页
+
 created_at: 撰写于
 updated_at: 修改于
