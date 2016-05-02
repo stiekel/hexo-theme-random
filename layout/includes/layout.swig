@@ -46,7 +46,7 @@
   </div>
 
 </div>
-{% if theme.duoshuo_shortname || config.duoshuo_shortname %}
+{% if page.comments && (theme.duoshuo_shortname || config.duoshuo_shortname) %}
   {% include 'duoshuo.swig' %}
 {% endif %}
 {% include 'footer.swig' %}
