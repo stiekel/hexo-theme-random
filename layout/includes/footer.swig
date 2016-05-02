@@ -2,6 +2,10 @@
 {% if config.baidu_analytics || theme.baidu_analytics || config.baidu_tongji || theme.baidu_tongji %}
   {% include 'baidu-tongji.swig' %}
 {% endif %}
+{% if config.google_analytics || theme.google_analytics %}
+  {% include 'google-analytics.swig' %}
+{% endif %}
+
 {% if theme.scripts !== undefined && theme.scripts.length > 0 %}
   {# scripts list from config.yml #}
   {% for url in theme.scripts %}
