@@ -2,11 +2,11 @@
 <div class="random-center hide-area">
   <div id="random-index">
     <div class="center-field">
-      <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg" width=120 height=120>
+      <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg" width=120 height=120 onClick="openUserCard()">
     </div>
     <div class="center-field">
-      <div class="title">{{ config.title }}</div>
-      <div class="sub-title">{{ config.subtitle }}</div>
+      <div class="title" onClick="openUserCard()">{{ config.title }}</div>
+      <div class="sub-title" onClick="openUserCard()">{{ config.subtitle }}</div>
     </div>
     <hr >
     <div class="center-field">

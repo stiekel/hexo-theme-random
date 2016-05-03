@@ -1,3 +1,4 @@
+{% include 'user-card.swig' %}
 <div id="btn-view">Hide</div>
 {% if config.baidu_analytics || theme.baidu_analytics || config.baidu_tongji || theme.baidu_tongji %}
   {% include 'baidu-tongji.swig' %}

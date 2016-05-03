@@ -4,7 +4,8 @@
   <div id="menu-outer">
     <div id="menu-inner">
       <div class="brand">
-        <a href="{{ url_for('/') }}">
+        {# <a href="{{ url_for('/') }}"> #}
+        <a onClick="openUserCard()">
           <img id="avatar" src="{{theme.avatar}}"/>
           <div id="homelink">{{config.title}}</div>
         </a>

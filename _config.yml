@@ -18,6 +18,7 @@ stylesheets:
 - /css/random.css
 - /css/vegas.min.css
 - /css/highlight-railscasts.css
+- /css/jquery.modal.min.css
 - /css/jquery.fancybox.css
 
 # scripts loaded in the end of the body
@@ -28,6 +29,7 @@ scripts:
 - /js/highlight.pack.js
 - /js/jquery.mousewheel.pack.js
 - /js/jquery.fancybox.pack.js
+- /js/jquery.modal.min.js
 
 avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
 
