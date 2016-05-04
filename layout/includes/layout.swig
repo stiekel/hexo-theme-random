@@ -10,11 +10,14 @@
           <div id="homelink">{{config.title}}</div>
         </a>
       </div>
-      <ul>
+      <ul id="menu-list">
       {% for key in Object.keys(theme.menu) %}
         <li><a href="{{ theme.menu[key] }}">{{ key }}</a></li>
       {% endfor %}
       </ul>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
     </div>
   </div>
 

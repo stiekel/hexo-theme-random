@@ -31,4 +31,11 @@ $(function(){
     console.log('i:', i, 'block:', block);
     hljs.highlightBlock(block);
   });
+  var i = 0;
+  $("#show-menu").on('click', function(){
+    if( i++ % 2)
+      $("#menu-list").hide();
+    else
+      $("#menu-list").show();
+  });
 });

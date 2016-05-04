@@ -313,10 +313,54 @@ article img
   margin: 0px;
   padding: 0px 3px;
 
+#show-menu
+  display: none;
+  position: relative;
+  text-align: right;
+  float: right;
+  margin-right: 10px;
+
+#show-menu button
+  background-color: #EEE;
+  border: 1px #444 solid;
+  padding: 6px;
+  position: static;
+  right: 0;
+  left: auto;
+
 // mobile
-@media (max-width: mobileMaxWidth)
-  #container,.random-center
+@media (max-width: desktopWidth)
+  #container,.random-center,#menu-outer
     width: 100%;
+  #container
+    left: 0%;
+    margin-left: 0px;
+  #menu-inner
+    width: 95%;
+    padding: 0 2%;
+  .post-title-item
+    margin-left: 3px;
+  #show-menu
+    display: inline-block;
+  article img
+    width: 95%
+  #menu-inner ul
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    background-color: #FFF;
+    opacity: opacityValue;
+    width: 100%;
+    padding-left: 0px;
+  #menu-inner ul li
+    text-align: center;
+    display: block;
+  // #menu-inner ul li+li
+    // border-top: 1px #AAA solid;
+  .highlight
+    margin-left: 0px;
+    margin-right: 0px;
+@media (max-width: mobileMaxWidth)
   .random-center
     position: static;
     left: 0;
@@ -326,9 +370,11 @@ article img
   #random-index ul li
     display: block;
     padding: 10px 0px;
-  #menu-outer, #bottom-outer, #random-index
+  #bottom-outer, #random-index
     opacity: mobileOpacityValue;
-
+  #menu-outer
+    opacity: mobileOpacityValue;
+  
 @media (max-height: 480px)
   .random-center
     position: static;
