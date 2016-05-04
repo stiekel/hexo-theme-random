@@ -27,6 +27,7 @@
 <html lang="{{ config.language }}">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ pageTitle }}</title>
   {% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
     {# stylesheet list from config.yml #}

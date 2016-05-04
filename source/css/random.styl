@@ -1,7 +1,11 @@
+// desktop max width
 desktopWidth = 760px
+// content margin site on desktop
 marginBorder = 10px
-mobildWidth = 100%
 opacityValue = 0.85
+// mobile max width
+mobileMaxWidth = 480px
+mobileOpacityValue = 0.95
 
 body {
   background-color: #BDC3C7;
@@ -308,3 +312,32 @@ article img
   display: inline-block;
   margin: 0px;
   padding: 0px 3px;
+
+// mobile
+@media (max-width: mobileMaxWidth)
+  #container,.random-center
+    width: 100%;
+  .random-center
+    position: static;
+    left: 0;
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 30%;
+  #random-index ul li
+    display: block;
+    padding: 10px 0px;
+  #menu-outer, #bottom-outer, #random-index
+    opacity: mobileOpacityValue;
+
+@media (max-height: 480px)
+  .random-center
+    position: static;
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+    margin-top: 95px;
+    width: 100%;
+
+@media (max-height: 320px)
+  .random-center
+    margin-top: 75px;
