@@ -119,7 +119,7 @@ a:hover {
   margin: 0px;
   padding: 0px;
   position: fixed;
-  z-index: 30;
+  z-index: 1;
   transition-property: all;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -134,19 +134,20 @@ a:hover {
   line-height: 50px;
   height: 50px;
   width: desktopWidth - marginBorder * 2;
-  text-align: center;
-  display: table-cell;
-  margin: 0 auto;
+  // text-align: center;
+  // display: table-cell;
+  // margin: 0 auto;
   height: 20px;
   padding: 0px marginBorder 0 marginBorder;
+  // width: 95%;
 
 #menu-inner .left
   float: left;
 
-#menu-inner .brand
-  margin: 0px;
+#menu-inner #brand
+  // margin: 0px;
   float: left;
-  display: inline-block;
+  // display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 
@@ -154,21 +155,21 @@ a:hover {
   line-height: 32px;
   display: inline-block;
 
-#menu-inner .brand a
+#menu-inner #brand a
   top: 0;
   color: #000;
 
-#menu-inner .brand a:hover
+#menu-inner #brand a:hover
   background-color: #fff;
   text-decoration: none;
 
-#menu-inner ul
+#menu-list
   line-style: none;
   display: inline-block;
   float: right;
   margin: 0px;
 
-#menu-inner ul li
+#menu-list li
   display: inline;
 
 #menu-outer #avatar
@@ -324,10 +325,10 @@ article img
 
 #show-menu
   display: none;
-  position: relative;
-  text-align: right;
+  // position: static;
+  // text-align: right;
   float: right;
-  margin-right: 10px;
+  // margin-right: 10px;
 
 #show-menu button
   background-color: #EEE;
@@ -353,19 +354,18 @@ article img
     display: inline-block;
   article img
     width: 95%
-  #menu-inner ul
+  #menu-list
     display: none;
     position: absolute;
     margin-top: 50px;
     background-color: #FFF;
     opacity: opacityValue;
     width: 100%;
+  #menu-list ul
     padding-left: 0px;
-  #menu-inner ul li
+  #menu-list li
     text-align: center;
     display: block;
-  // #menu-inner ul li+li
-    // border-top: 1px #AAA solid;
   .highlight
     margin-left: 0px;
     margin-right: 0px;

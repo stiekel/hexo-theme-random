@@ -3,18 +3,20 @@
 <div id="container" class="hide-area">
   <div id="menu-outer" class="slide-down">
     <div id="menu-inner">
-      <div class="brand">
+      <div id="brand">
         {# <a href="{{ url_for('/') }}"> #}
         <a onClick="openUserCard()">
           <img id="avatar" src="{{theme.avatar}}"/>
           <div id="homelink">{{config.title}}</div>
         </a>
       </div>
-      <ul id="menu-list">
-      {% for key in Object.keys(theme.menu) %}
-        <li><a href="{{ theme.menu[key] }}">{{ key }}</a></li>
-      {% endfor %}
-      </ul>
+      <div id="menu-list">
+        <ul>
+        {% for key in Object.keys(theme.menu) %}
+          <li><a href="{{ theme.menu[key] }}">{{ key }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
       <div id="show-menu">
         <button>Menu</button>
       </div>

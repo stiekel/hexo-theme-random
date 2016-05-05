@@ -31,9 +31,9 @@ $(function(){
     console.log('i:', i, 'block:', block);
     hljs.highlightBlock(block);
   });
-  var i = 0;
+
   $("#show-menu").on('click', function(){
-    if( i++ % 2)
+    if( $('#menu-list').is(":visible") )
       $("#menu-list").hide();
     else
       $("#menu-list").show();
@@ -67,10 +67,11 @@ $(function(){
     }
 
     if(currentST > lastScrollTop && currentST > $("#menu-outer").outerHeight()) {
-      console.log('slide up');
+      if($('#menu-list').is(":visible")) {
+        $("#menu-list").hide();
+      }
       $("#menu-outer").removeClass('slide-down').addClass('slide-up');
     } else if(currentST + $(window).height() < $(document).height()) {
-      console.log('slide down', $("#menu-outer").outerHeight());
       $("#menu-outer").removeClass('slide-up').addClass('slide-down');
     }
 
