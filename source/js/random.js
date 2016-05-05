@@ -38,4 +38,42 @@ $(function(){
     else
       $("#menu-list").show();
   });
+
+
+  // nav hide and show
+  var isScroll = false;
+  var lastScrollTop = 0;
+
+  $(window).scroll(function(e){
+    isScroll = true;
+  });
+
+  $(document).bind('touchmove', function(e){
+    isScroll = true;
+  });
+
+  setInterval(function(){
+    if(isScroll) {
+      afterScroll();
+      isScroll = false;
+    }
+  }, 200);
+
+  function afterScroll(){
+    var currentST = $(this).scrollTop();
+
+    if(Math.abs(lastScrollTop - currentST) <= 5) {
+      return;
+    }
+
+    if(currentST > lastScrollTop && currentST > $("#menu-outer").outerHeight()) {
+      console.log('slide up');
+      $("#menu-outer").removeClass('slide-down').addClass('slide-up');
+    } else if(currentST + $(window).height() < $(document).height()) {
+      console.log('slide down', $("#menu-outer").outerHeight());
+      $("#menu-outer").removeClass('slide-up').addClass('slide-down');
+    }
+
+    lastScrollTop = currentST;
+  }
 });

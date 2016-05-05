@@ -1,7 +1,7 @@
 {% include 'head.swig' %}
 <body>
 <div id="container" class="hide-area">
-  <div id="menu-outer">
+  <div id="menu-outer" class="slide-down">
     <div id="menu-inner">
       <div class="brand">
         {# <a href="{{ url_for('/') }}"> #}
