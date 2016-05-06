@@ -13,17 +13,7 @@ $(function(){
   });
 
   // hide / show content button
-  var hideAll = false;
-  $("#btn-view").on('click', function(){
-    if(hideAll) {
-      $(".hide-area").show();
-      $("#btn-view").html('Hide');
-    } else {
-      $(".hide-area").hide();
-      $("#btn-view").html('Show');
-    }
-    hideAll = !hideAll;
-  });
+  $("#btn-view").on('click', showHideToggle);
 
   // code highlight
   hljs.configure({useBR: true});
@@ -81,3 +71,32 @@ $(function(){
     lastScrollTop = currentST;
   }
 });
+
+var hideAll = false;
+function showHideToggle() {
+  if(hideAll) {
+    $(".hide-area").show();
+    $("#btn-view").html('Hide');
+  } else {
+    $(".hide-area").hide();
+    $("#btn-view").html('Show');
+  }
+  hideAll = !hideAll;
+}
+
+// open user card
+function openUserCard() {
+  /*$("#user-card").modal({
+    showClose: false
+  });*/
+  showHideToggle();
+  $.fancybox({
+    type: 'html',
+    autoSize: true,
+    maxWidth: 400,
+    autoCenter: true,
+    content: $("#user-card"),
+    closeBtn: false,
+    afterClose: showHideToggle
+  });
+}

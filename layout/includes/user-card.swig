@@ -1,4 +1,4 @@
-<div id="user-card" class="modal">
+<div id="user-card">
   <div class="center-field">
     <img class="avatar" src="{{ config.avatar || theme.avatar }}">
     <p id="description">{{ site.description || theme.description }}</p>
@@ -9,16 +9,3 @@
     </ul>
   </div>
 </div>
-
-<script type="text/javascript">
-  function openUserCard() {
-    /*$("#user-card").modal({
-      showClose: false
-    });*/
-    $.fancybox({
-      type: 'html',
-      content: $("#user-card"),
-      closeBtn: false
-    });
-  }
-</script>
