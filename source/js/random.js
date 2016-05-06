@@ -1,4 +1,5 @@
 $(function(){
+  var isMobile = false;
   // vegas config
   // add slide image
   var slides = [];
@@ -33,6 +34,7 @@ $(function(){
   });
 
   $("#show-menu").on('click', function(){
+    if(!isMobile) return;
     if( $('#menu-list').is(":visible") )
       $("#menu-list").hide();
     else
@@ -53,6 +55,7 @@ $(function(){
   });
 
   setInterval(function(){
+    isMobile = $(window).width() < 768;
     if(isScroll) {
       afterScroll();
       isScroll = false;
@@ -67,7 +70,7 @@ $(function(){
     }
 
     if(currentST > lastScrollTop && currentST > $("#menu-outer").outerHeight()) {
-      if($('#menu-list').is(":visible")) {
+      if($('#menu-list').is(":visible") && isMobile) {
         $("#menu-list").hide();
       }
       $("#menu-outer").removeClass('slide-down').addClass('slide-up');
