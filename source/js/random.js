@@ -3,13 +3,21 @@ $(function(){
   // vegas config
   // add slide image
   var slides = [];
-  for(var i = 1; i <= 10; i++) {
+  if(backgroundImages && backgroundImages.length > 0) {
+    backgroundImages.forEach(function(img){
+      slides.push({
+        src: img.replace('__width__', window.screen.availWidth).replace('__height__', window.screen.availHeight)
+      });
+    });
+  }
+  if(slides.length === 0) for(var i = 1; i <= 10; i++) {
     slides.push({
       src: 'https://unsplash.it/' + window.screen.availWidth + '/' + window.screen.availHeight + '/?random&t=' + i
     });
   }
   $('body').vegas({
-    slides: slides
+    slides: slides,
+    shuffle: true
   });
 
   // hide / show content button

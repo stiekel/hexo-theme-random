@@ -16,6 +16,12 @@
 {% if theme.fancybox || config.fancybox %}
   <script>
   // fancybox
+  var backgroundImages = [];
+  {% if theme.backgroundImages %}
+    {% for i in theme.backgroundImages %}
+      backgroundImages.push('{{ i }}');
+    {% endfor %}
+  {% endif %}
   $('#post').each(function(i){
     $(this).find('img').each(function(){
       if ($(this).parent().hasClass('fancybox')) return;
