@@ -32,7 +32,10 @@
     $(this).find('.fancybox').each(function(){
       $(this).attr('rel', 'post' + i);
     });
+
   });
+  var vegasConfig = {{ JSON.stringify(theme.vegasConfig) }};
+  console.log('vegasConfig:', vegasConfig, typeof vegasConfig);
   if($.fancybox){
     $('.fancybox').fancybox();
   }

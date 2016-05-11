@@ -30,56 +30,72 @@ scripts:
 - /js/jquery.fancybox.pack.js
 
 backgroundImages:
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_6.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_7.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_8.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_7.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_8.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_9.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_10.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_11.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_11.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_12.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_13.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_14.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_14.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_15.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_16.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_17.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_18.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_19.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_20.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_19.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_20.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_21.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_22.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_22.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_23.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_24.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_25.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_26.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_27.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_28.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_27.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_28.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_29.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_30.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_31.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_30.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_31.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_32.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_33.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_34.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_35.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_36.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_37.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_38.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_35.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_36.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_37.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_38.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_39.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_40.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_41.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_42.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_43.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_40.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_41.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_42.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_43.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_44.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_45.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_45.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_46.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_47.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_48.jpg?imageView2/1/w/__width__/h/__height__
 - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_49.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_50.jpg?imageView2/1/w/__width__/h/__height__
+# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_50.jpg?imageView2/1/w/__width__/h/__height__
+
+vegasConfig:
+  animation: 'random'
+  # transition: 'swirlRight'
+  transition:
+    - slideLeft2
+    - slideRight2
+    - zoomIn
+    - swirLeft
+    - swirRight
+    - flash
+    - flash2
+  timer: true
+  delay: 5000
+  shuffle: true
+
 
 avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
 

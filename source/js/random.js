@@ -15,10 +15,15 @@ $(function(){
       src: 'https://unsplash.it/' + window.screen.availWidth + '/' + window.screen.availHeight + '/?random&t=' + i
     });
   }
-  $('body').vegas({
-    slides: slides,
-    shuffle: true
-  });
+  // check vegas config
+  if('object' !== typeof vegasConfig) {
+    vegasConfig = {
+      shuffle: true
+    };
+  }
+  console.log('after vegasConfig:', vegasConfig, typeof vegasConfig);
+  vegasConfig.slides = slides;
+  $('body').vegas(vegasConfig);
 
   // hide / show content button
   $("#btn-view").on('click', showHideToggle);
@@ -27,7 +32,6 @@ $(function(){
   hljs.configure({useBR: true});
   hljs.initHighlightingOnLoad();
   $(".highlight").each(function(i, block) {
-    console.log('i:', i, 'block:', block);
     hljs.highlightBlock(block);
   });
 
