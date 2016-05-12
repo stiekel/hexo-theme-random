@@ -35,7 +35,7 @@
 
   });
   var vegasConfig = {{ JSON.stringify(theme.vegasConfig) }};
-  console.log('vegasConfig:', vegasConfig, typeof vegasConfig);
+  var unsplashConfig = {{ JSON.stringify(theme.unsplashConfig) }};
   if($.fancybox){
     $('.fancybox').fancybox();
   }

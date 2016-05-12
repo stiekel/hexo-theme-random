@@ -95,7 +95,13 @@ vegasConfig:
   timer: true
   delay: 5000
   shuffle: true
+  count: 10
 
+unsplashConfig:
+  # more about config on https://unsplash.it/
+  # blur: true
+  gravity: 'north' # north, east, south, west, center
+  # greyscale: true
 
 avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
 
