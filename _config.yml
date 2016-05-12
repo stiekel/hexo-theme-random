@@ -82,8 +82,10 @@ backgroundImages:
 # - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_50.jpg?imageView2/1/w/__width__/h/__height__
 
 vegasConfig:
-  animation: 'random'
+  # more about config http://vegas.jaysalvat.com/documentation/settings/
+  # animation: 'random'
   # transition: 'swirlRight'
+  preload­Image: true
   transition:
     - slideLeft2
     - slideRight2
