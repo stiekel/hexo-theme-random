@@ -45,14 +45,7 @@
         {% endif %}
         </h3>
       {% endif %}
-      <div class="post-title-item">
-        <a href="{{ config.root }}{{ postItem.path }}">{{ postItem.title }}</a>
-        {% if postItem.date %}
-          <time datetime="{{ postItem.date.toJSON() }}">
-            {{ date(postItem.date) }}
-          </time>
-        {% endif %}
-      </div>
+      {% include 'post-title-item.swig' %}
     {% endfor %}
   </div>
 {% endif %}
