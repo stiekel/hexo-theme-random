@@ -6,7 +6,7 @@
       <span class="posts-count">
       {{ __('total_title') }}
       {{ page.posts.length }}
-      {% if 1 === page.posts %}
+      {% if 1 === page.posts.length %}
         {{ __('post_title') }}
       {% else %}
         {{ __('posts_title') }}
