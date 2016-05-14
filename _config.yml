@@ -4,11 +4,11 @@ language: en
 
 # main menu navigation
 menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-  Categories: /categories
-  About: /about
+  首页: /
+  文章: /archives
+  标签: /tags
+  分类: /categories
+  关于: /about
 
 # Miscelaneous
 favicon: /favicon.ico
@@ -89,10 +89,10 @@ vegasConfig:
   transition:
     - slideLeft2
     - slideRight2
-    - zoomIn
-    - swirLeft
-    - swirRight
-    - flash
+    # - zoomIn
+    # - swirLeft
+    # - swirRight
+    # - flash
     - flash2
   timer: true
   delay: 5000
