@@ -10,13 +10,14 @@
     </div>
     <hr >
     <div class="center-field">
-      <ul>
+      <ul class="index-nav-link">
         {% for key in Object.keys(theme.menu)  %}
           {% if theme.menu[key] != '/'  %}
             <li><a href="{{ theme.menu[key] }}">{{ key }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
+      {% include 'includes/social-icon.swig' %}
     </div>
   </div>
 </div>

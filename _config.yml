@@ -19,6 +19,7 @@ stylesheets:
 - /css/vegas.min.css
 - /css/highlight-railscasts.css
 - /css/jquery.fancybox.css
+- /css/iconfont/iconfont.css
 
 # scripts loaded in the end of the body
 scripts:

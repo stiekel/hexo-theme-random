@@ -50,6 +50,7 @@ a:hover {
 
 #random-index {
   margin: 20px;
+  padding-bottom: 20px;
   text-align: center;
   border-radius: 10px;
   background-color: #ecf0f1;
@@ -85,12 +86,12 @@ a:hover {
   padding-bottom: 10px;
 }
 
-#random-index ul {
+#random-index .index-nav-link {
   list-style: none;
-  padding: 5px 0px 30px 0px;
+  padding: 5px 0px 5px 0px;
 }
 
-#random-index ul li {
+#random-index .index-nav-link li {
   display: inline;
   padding-left: 5px;
 }
@@ -172,7 +173,7 @@ a:hover {
 #menu-list ul
   margin: 0px;
 
-#menu-list li
+#menu-list ul li
   margin-left: 15px;
   display: inline;
 
@@ -348,7 +349,42 @@ article img
   color: #fff;
 .category-list-item .active:hover
   background-color: #22A7F0;
+  
+.social-icon
+  padding-left: 0px;
+      
+.social-icon li
+  display: inline;
 
+.social-icon li a
+  color: gray;
+
+.social-icon li a i
+  font-size: 25px;
+
+.social-icon li a:hover
+  text-decoration: none;
+
+.douban:hover
+  color: #072;
+.twitter:hover
+  color: #1da1f2;
+.linkedin:hover
+  color: #333;
+.weibo:hover
+  color: #fa7d3c;
+.google-plus:hover
+  color: #d73d32;
+.facebook:hover
+  color: #0e385f;
+.dribbble:hover
+  color: #ea4c89;
+.github:hover
+  color: #569e3d;
+.coding:hover
+  color: #000;
+.npmjs:hover
+  color: #cb3837;
 // mobile
 @media (max-width: desktopWidth)
   #container,.random-center,#menu-outer
@@ -374,7 +410,7 @@ article img
     width: 100%;
   #menu-list ul
     padding-left: 0px;
-  #menu-list li
+  #menu-list ul li
     text-align: center;
     display: block;
   .highlight
@@ -389,7 +425,7 @@ article img
     margin-left: 0px;
     width: 100%;
     margin-top: 30%;
-  #random-index ul li
+  #random-index .index-nav-link li
     display: block;
     // padding: 0px 0px;
   #bottom-outer, #random-index
@@ -405,7 +441,7 @@ article img
     margin-left: 0px;
     margin-top: 95px;
     width: 100%;
-  #random-index ul li
+  #random-index .index-nav-link li
     display: block;
     padding: 0px 0px;
 
