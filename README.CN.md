@@ -1,0 +1,156 @@
+# hexo-theme-random 中文文档
+
+如果你：
+
+* 喜欢图片背景
+* 不喜欢文章摘要
+* 不喜欢在文章列表中翻页
+
+那这款主题很可能适合你。
+
+## 主题安装
+
+在你的博客目录里，执行如下的命令：
+
+```sh
+git clone https://github.com/stiekel/hexo-theme-random.git theme/random
+```
+
+然后修改你博客的主配置文件，将主题设置为 `random`：
+
+```yml
+theme: random
+```
+
+## 菜单与导航链接的设置
+
+显示在首页和导航的链接，可以在主题的配置文件（`theme/random/_config.yml`）中自定义。如果想链接到标签和分类的列表页，还需要自己手动创建对应页面。
+
+### 链接
+
+在主题的配置文件中，可以设置首页和导航菜单中的链接，如下：
+
+menu:
+  首页: /
+  文章: /archives
+  标签: /tags
+  分类: /categories
+  关于: /about
+
+在首页中，会自动隐藏针对首页的链接。但是，标签和分类的列表页，需要我们手动创建。
+
+### 创建分类表页和标签列表页
+
+hexo 默认是没有分类和标签列表页的，本主题已经提供了对这两个页面的支持，但需要通过 hexo 的来生成对应的页面。
+
+要生成标签列表页，在博客主目录中执行如下命令：
+
+```sh
+hexo new page tags
+```
+
+这样，会生成一个 `source/tags/index.md` 文件，编辑文件，修改文件的 `type` 项为 `tags`，如下：
+
+```yml
+title: 标签
+date: 2016-01-16 06:17:29
+type: "tags"
+comments: false
+```
+
+同样，创建分类列表页：
+
+```sh
+hexo new page categories
+```
+
+编辑 `source/categories/index.md` 如下：
+
+```yml
+title: 分类
+date: 2015-08-03 14:19:29
+type: "categories"
+comments: false
+```
+
+## 社交网站链接配置
+
+在主题，和弹出的个人信息卡片中，显示有社交网站的链接，需要在主题的配置文件 `theme/random/_config.yml` 中添加对应的配置，如下：
+
+```yml
+social:
+  GitHub: https://github.com/stiekel
+  Coding.NET: https://coding.net/u/Stiekel
+  Twitter: https://twitter.com/SidCN
+  Weibo: http://weibo.com/sidcn
+  DouBan: http://www.douban.com/people/Stiekel/
+```
+
+在显示的时候，会自动配置社交网站的 url ，来显示对应的图标。除了上述几个，另外还支持 Facebook / Google plus / Dribbble / LinkedIn / npmjs 等。
+
+如果您喜欢的社交网站不在其中，欢迎提 [issue](https://github.com/stiekel/hexo-theme-random/issues)。
+
+## 主题配置
+
+主题安装后，不需要任何配置，也可以很好的显示。
+
+### 背景图来源的配置
+
+对于轮播的背景图片，有两种来源，一是使用指定的图片，二是使用 [unsplash](https://source.unsplash.com/) 提供的随机图片。
+
+如果使用 unsplash 的图片，则可以在主题的配置文件 `_config.yml` 中进行配置：
+
+```yml
+unsplashConfig:
+  # 关于这几个配置项的说明，请参见 https://unsplash.it/
+  # blur: true # 给图片增加模糊特效
+  gravity: 'north' # north, east, south, west, center # 图片翻转
+  # greyscale: true # 使用灰度图片
+```
+
+当然，也可以自己配置背景图片，也是在主题配置文件中进行，如下：
+
+```yml
+backgroundImages:
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
+```
+
+URL 中的 `__width__` 和 `__height__` ，在请求时，会替换为浏览器的宽度和高度值，如果你的图片服务器支持按分辨率裁剪，那就可以用得上。
+
+### 背景图轮播的配置
+
+背景图轮播，使用的是 [vegas](http://vegas.jaysalvat.com) ，也是在主题的配置文件中进行：
+
+```yml
+vegasConfig:
+  # animation: 'random'
+  preload­Image: true # 图片预加载配置
+  transition: # 图片的切换物资
+    - slideLeft2
+    - slideRight2
+    # - zoomIn
+    # - swirLeft
+    # - swirRight
+    # - flash
+    - flash2
+  # transition: 'swirlRight' # 可以只配置一个
+  timer: true # 是否显示时间进度条
+  delay: 5000 # 每张图片的显示时间
+  shuffle: true # 按顺序播放，还是随机播放
+  count: 10 #一共多少张图片
+```
+
+具体参数的意义，请参见 [vegas 文档](http://vegas.jaysalvat.com/documentation/settings/)。
+
+## 感谢
+
+* 背景轮插插件： [vegas](http://vegas.jaysalvat.com/)
+* 社交网站链接图标： [iconfont](http://iconfont.cn/)
+
+## 反馈
+
+欢迎使用，如果有问题，请您在 [issue](https://github.com/stiekel/hexo-theme-random/issues) 中提出来。
