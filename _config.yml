@@ -10,6 +10,13 @@ menu:
   分类: /categories
   关于: /about
 
+social:
+  GitHub: https://github.com/stiekel
+  Coding.NET: https://coding.net/u/Stiekel
+  Twitter: https://twitter.com/SidCN
+  Weibo: http://weibo.com/sidcn
+  DouBan: http://www.douban.com/people/Stiekel/
+
 # Miscelaneous
 favicon: /favicon.ico
 
@@ -98,7 +105,7 @@ vegasConfig:
   timer: true
   delay: 5000
   shuffle: true
-  count: 10
+  count: 28
 
 unsplashConfig:
   # more about config on https://unsplash.it/
