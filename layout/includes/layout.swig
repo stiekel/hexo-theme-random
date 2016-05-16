@@ -1,5 +1,6 @@
 {% include 'head.swig' %}
 <body>
+{% include 'side-pagination.swig' %}
 <div id="container" class="hide-area">
   <div id="menu-outer" class="slide-down">
     <div id="menu-inner">

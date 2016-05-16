@@ -385,6 +385,73 @@ article img
   color: #000;
 .npmjs:hover
   color: #cb3837;
+
+.side-navigate
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  z-index: 2;
+
+.side-navigate .item
+  display: table-cell;
+
+.side-navigate .item-icon:hover
+  // border: 5px #52B3D9 solid;
+  opacity: 1;
+  background-size: 40px 40px;
+  
+.side-navigate .item-icon
+  opacity: 0.55;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px #52B3D9 solid;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+
+// .side-navigate .item-icon:hover
+  // display: none;
+.side-navigate a:hover + div
+  display: block;
+.side-navigate a:hover
+  display: block;
+
+.side-navigate .prev .item-icon
+  background-image: url('prev.png');
+  float: left;
+.side-navigate .prev
+  display: inline-block;
+  left: 0;
+
+.side-navigate .item-title
+  display: none;
+  padding: 10px;
+  max-width: 300px;
+  vertical-align: center;
+  background-color: #52B3D9;
+  height: 52px;
+  
+.side-navigate .next .item-icon
+  background-image: url('next.png')
+  float: right;
+.side-navigate .prev .item-title
+  margin-left: 70px;
+.side-navigate .next .item-title
+  margin-right: 70px;
+
+.side-navigate .next
+  // text-align: right;
+  display: inline-block;
+  float: right;
+  right: 0;
+
+// side-navigate, hide while max-width < desktopWidth + 300px
+@media (max-width: desktopWidth + 300px)
+  .side-navigate
+    display: none;
+
 // mobile
 @media (max-width: desktopWidth)
   #container,.random-center,#menu-outer
