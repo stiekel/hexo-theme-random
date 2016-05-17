@@ -55,7 +55,7 @@ Hexo do NOT create tags list page and categories list page in default, but Rando
 If you want to create tags list page, run this command in blog root path:
 
 ```sh
-hexo new page Tags
+hexo new page tags
 ```
 
 this will create a folder and a markdown file `source/tags/index.md`, change the `type` value of thie file as following:
@@ -70,7 +70,7 @@ comments: false
 the same to create categories list page:
 
 ```sh
-hexo new page Categories
+hexo new page categories
 ```
 
 and modify the `source/categories/index.md` as following:
