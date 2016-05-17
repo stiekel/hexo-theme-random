@@ -2,3 +2,155 @@
 A hexo theme with random fullscreen background image.
 
 ## [中文文档](README.CN.md)
+
+If you
+
+* prefer to use big picture as background image
+* do NOT like show article except in post list
+* do NOT like use paginations in post list
+
+This theme seems to suit you.
+
+## Install
+
+execute this command in blog root path:
+
+```sh
+git clone https://github.com/stiekel/hexo-theme-random.git theme/random
+```
+
+modify the `theme` setting in hexo main config file `_config.yml` as following:
+
+```yml
+theme: random
+```
+
+## Nav links config
+
+Nav links in homepage and the top of other pages, you can config it in theme config file `theme/random/_config.yml`:
+
+```yml
+menu:
+  Home: /
+  Archives: /archives
+  Tags: /tags
+  Categories: /categories
+  About: /about
+```
+
+In index page, the `Home` link will hide itself.
+
+## Create tags list page and categories list page
+
+Hexo do NOT create tags list page and categories list page in default, but Random theme provide those pages, you just need to create it.
+
+If you want to create tags list page, run this command in blog root path:
+
+```sh
+hexo new page Tags
+```
+
+this will create a folder and a markdown file `source/tags/index.md`, change the `type` value of thie file as following:
+
+```yml
+title: Tags
+date: 2016-01-16 06:17:29
+type: "tags"
+comments: false
+```
+
+the same to create categories list page:
+
+```sh
+hexo new page Categories
+```
+
+and modify the `source/categories/index.md` as following:
+
+```md
+title: Categories
+date: 2015-08-03 14:19:29
+type: "categories"
+comments: false
+```
+
+## Social links config
+
+In the homepage, and the user card when visitors click the avatar, there are some social site icon links, You can config the icons in theme config file `theme/random/_config.yml` as following:
+
+```yml
+social:
+  GitHub: https://github.com/stiekel
+  Coding.NET: https://coding.net/u/Stiekel
+  Twitter: https://twitter.com/SidCN
+  Weibo: http://weibo.com/sidcn
+  DouBan: http://www.douban.com/people/Stiekel/
+```
+
+It will replace text into icon automaticalcally, Random theme support to show icon of Facebook / Google Plus / Dribbble / LinkedIn / NPMjs.
+
+If you need more, please create [issue](https://github.com/stiekel/hexo-theme-random/issues).
+
+## Theme config
+
+The following settings is not prerequisite.
+
+### Background image source config
+
+The background image use [unsplash](https://source.unsplash.com/) as default, but you can use your custom pictures.
+
+If you use unsplash images, you can config the settings in theme config file `theme/random/_config.yml`: 
+
+```yml
+unsplashConfig:
+  # more about config on https://unsplash.it/
+  # blur: true
+  gravity: 'north' # north, east, south, west, center
+  # greyscale: true
+```
+
+if you want use your own pictures, change the following section:
+
+```yml
+backgroundImages:
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__
+- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
+```
+
+`__width__` and `__height__` in URLs will replace with browser window size when show the picture, It's very useful when you image server support cut image into appointed size.
+
+### Vegas(background image player) config
+
+Random theme use [Vegas](http://vegas.jaysalvat.com/) to organize pictures, you can config it in following section of theme config file:
+
+```yml
+vegasConfig:
+  # more about config http://vegas.jaysalvat.com/documentation/settings/
+  # animation: 'random'
+  # transition: 'swirlRight'
+  preload­Image: true
+  transition:
+    - slideLeft2
+    - slideRight2
+    # - zoomIn
+    # - swirLeft
+    # - swirRight
+    # - flash
+    - flash2
+  timer: true
+  delay: 5000
+  shuffle: true
+  count: 28
+```
+
+## Thanks
+
+* [Vegas](http://vegas.jaysalvat.com)
+* [iconfont](http://iconfont.cn/)
+
+## Feedback
+
+[issue](https://github.com/stiekel/hexo-theme-random/issues).
