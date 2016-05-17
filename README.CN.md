@@ -23,7 +23,7 @@
 在你的博客目录里，执行如下的命令：
 
 ```sh
-git clone https://github.com/stiekel/hexo-theme-random.git theme/random
+git clone https://github.com/stiekel/hexo-theme-random.git themes/random
 ```
 
 然后修改博客的主配置文件，将主题设置为 `random`：

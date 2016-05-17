@@ -16,7 +16,7 @@ This theme seems to suit you.
 execute this command in blog root path:
 
 ```sh
-git clone https://github.com/stiekel/hexo-theme-random.git theme/random
+git clone https://github.com/stiekel/hexo-theme-random.git themes/random
 ```
 
 modify the `theme` setting in hexo main config file `_config.yml` as following:
