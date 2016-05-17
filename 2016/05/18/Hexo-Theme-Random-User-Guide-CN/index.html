@@ -1,0 +1,352 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="author" content="Stiekel">
+  
+  
+  <meta name="description" content="hexo-theme-random 中文文档如果你：
+
+喜欢用大图做背景
+不喜欢文章摘要
+不喜欢在文章列表中翻页
+
+那这款主题很可能适合你。
+屏幕截图
+
+
+
+主题安装在你的博客目录里，执行如下的命令：
+1git clone https://github.com/stiekel/hexo-theme-random.git themes/random
+然后修改博客的主配置文件，将主题设置为 random：
+1theme: random
+头像设置可以在 Hexo 主配置文件，或者主题的配置文件 theme/random/_config.yml ，增加一个 avatar 配置，如下：
+1avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
+菜单与导航链接的设置显示在首页和导航的链接，可以在主题的配置文件（theme/random/_config.yml）中自定义。如果想链接到标签和分类的列表页，还需要自己手动创建对应页面。
+链接在主题的配置文件中，可以设置首页和导航菜单中的链接，配置如下：
+123456menu:  首页: /  文章: /archives  标签: /tags  分类: /categories  关于: /about
+在首页中，会自动隐藏指向首页的链接。但是，标签和分类的列表页，需要我们手动创建。
+创建分类列表页和标签列表页hexo 默认是没有分类和标签列表页的，本主题已经提供了对这两个页面的支持，但需要手动生成对应的页面。
+要生成标签列表页，在博客主目录中执行如下命令：
+1hexo new page tags
+这样，会生成一个 source/tags/index.md 文件，编辑文件，修改文件的 type 项为 tags，如下：
+1234title: 标签date: 2016-01-16 06:17:29type: "tags"comments: false
+同样，创建分类列表页：
+1hexo new page categories
+编辑 source/categories/index.md 如下：
+1234title: 分类date: 2015-08-03 14:19:29type: "categories"comments: false
+社交网站链接配置在主页和点击头像弹出的个人信息卡片中，显示有社交网站的链接，需要在主题的配置文件 theme/random/_config.yml 中添加对应的配置，如下：
+123456social:  GitHub: https://github.com/stiekel  Coding.NET: https://coding.net/u/Stiekel  Twitter: https://twitter.com/SidCN  Weibo: http://weibo.com/sidcn  DouBan: http://www.douban.com/people/Stiekel/
+在显示的时候，会自动根据社交网站的 url ，来显示对应的图标。除了上述几个，另外还支持 Facebook / Google Plus / Dribbble / LinkedIn / NPMjs 等。
+如果您喜欢的社交网站不在其中，欢迎提 issue。
+主题配置主题安装后，不需要任何配置，也可以很好的显示。
+背景图来源的配置对于轮播的背景图片，有两种来源，一是使用指定的图片，二是使用 unsplash 提供的随机图片。
+如果使用 unsplash 的图片，则可以在主题的配置文件 _config.yml 中进行配置，参数的具体意见，请参见 unsplash文档：
+12345unsplashConfig:  # 关于这几个配置项的说明，请参见 https://unsplash.it/  # blur: true # 给图片增加模糊特效  gravity: 'north' # north, east, south, west, center # 图片翻转  # greyscale: true # 使用灰度图片
+当然，也可以自己配置背景图片，也是在主题配置文件中进行，如下：
+123456backgroundImages:- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
+URL 中的 __width__ 和 __height__ ，在请求时，会替换为浏览器的宽度和高度值，如果你的图片服务器支持按分辨率裁剪，那就可以用得上。
+背景图轮播的配置背景图轮播，使用的是 vegas ，也是在主题的配置文件中进行自定义：
+12345678910111213141516vegasConfig:  # animation: 'random'  preload­Image: true # 图片预加载配置  transition: # 图片的切换物资    - slideLeft2    - slideRight2    # - zoomIn    # - swirLeft    # - swirRight    # - flash    - flash2  # transition: 'swirlRight' # 可以只配置一个  timer: true # 是否显示时间进度条  delay: 5000 # 每张图片的显示时间  shuffle: true # 按顺序播放，还是随机播放  count: 10 #一共多少张图片
+具体参数的意义，请参见 vegas 文档。
+感谢
+背景轮插插件： vegas
+社交网站链接图标： iconfont
+Hexo 主题生成器： generator-hexo-theme
+
+反馈欢迎使用，如果有问题，请您在 issue 中提出来。
+">
+  <title>Hexo Theme Random 中文文档 [ Random demo site ]</title>
+  
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+  <link rel="stylesheet" href="/css/random.css">
+<link rel="stylesheet" href="/css/vegas.min.css">
+<link rel="stylesheet" href="/css/highlight-railscasts.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/iconfont/iconfont.css">
+  
+</head>
+
+<body>
+<div class="side-navigate hide-area">
+  
+  
+    <div class="item next">
+      <a href="/2016/05/18/Hexo-Theme-Random-User-Guide/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Hexo Theme Random User Guide
+      </div>
+    </div>
+  
+</div>
+<div id="container" class="hide-area">
+  <div id="menu-outer" class="slide-down">
+    <div id="menu-inner">
+      <div id="brand">
+        
+        <a onClick="openUserCard()">
+          <img id="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg"/>
+          <div id="homelink">Random demo site</div>
+        </a>
+      </div>
+      <div id="menu-list">
+        <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/archives">Archives</a></li>
+        
+          <li><a href="/tags">Tags</a></li>
+        
+          <li><a href="/categories">Categories</a></li>
+        
+          <li><a href="/about">About</a></li>
+        
+          <li><a href="https://github.com/stiekel/hexo-theme-random">Github</a></li>
+        
+        </ul>
+      </div>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  <article id="post">
+    <h1>Hexo Theme Random 中文文档</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">Created at 2016-05-18</span>
+      
+        <span id = "post-title-updated">Updated at 2016-05-18</span>
+      
+      <span id = "post-title-categories">Category
+      
+      
+        
+        
+        <a href="/categories/Readme/">Readme</a>
+      
+        
+          /
+        
+        
+        <a href="/categories/Readme/文档/">文档</a>
+      
+      </span>
+      <span id = "post-title-tags">
+      Tag
+      
+      
+        
+        
+        <a href="/tags/Random/">Random</a>
+      
+        
+          /
+        
+        
+        <a href="/tags/文档/">文档</a>
+      
+      </span>
+    </p>
+    <h1 id="hexo-theme-random-中文文档"><a href="#hexo-theme-random-中文文档" class="headerlink" title="hexo-theme-random 中文文档"></a>hexo-theme-random 中文文档</h1><p>如果你：</p>
+<ul>
+<li>喜欢用大图做背景</li>
+<li>不喜欢文章摘要</li>
+<li>不喜欢在文章列表中翻页</li>
+</ul>
+<p>那这款主题很可能适合你。</p>
+<h2 id="屏幕截图"><a href="#屏幕截图" class="headerlink" title="屏幕截图"></a>屏幕截图</h2><p><img src="http://two.yt/images/2016/05/16/nDj.png" alt="hexo theme random index screenshot cn"></p>
+<p><img src="http://two.yt/images/2016/05/16/mny.png" alt="hexo theme random archives screenshot cn"></p>
+<p><img src="http://two.yt/images/2016/05/16/3R4.png" alt="hexo theme random category detail screenshot cn"></p>
+<p><img src="http://two.yt/images/2016/05/16/oDm.png" alt="hexo theme random user card screenshot cn"></p>
+<h2 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h2><p>在你的博客目录里，执行如下的命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/stiekel/hexo-theme-random.git themes/random</span><br></pre></td></tr></table></figure>
+<p>然后修改博客的主配置文件，将主题设置为 <code>random</code>：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> random</span><br></pre></td></tr></table></figure>
+<h2 id="头像设置"><a href="#头像设置" class="headerlink" title="头像设置"></a>头像设置</h2><p>可以在 Hexo 主配置文件，或者主题的配置文件 <code>theme/random/_config.yml</code> ，增加一个 <code>avatar</code> 配置，如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span> http://<span class="number">7</span>te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg</span><br></pre></td></tr></table></figure>
+<h2 id="菜单与导航链接的设置"><a href="#菜单与导航链接的设置" class="headerlink" title="菜单与导航链接的设置"></a>菜单与导航链接的设置</h2><p>显示在首页和导航的链接，可以在主题的配置文件（<code>theme/random/_config.yml</code>）中自定义。如果想链接到标签和分类的列表页，还需要自己手动创建对应页面。</p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>在主题的配置文件中，可以设置首页和导航菜单中的链接，配置如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  首页: /</span><br><span class="line">  文章: /archives</span><br><span class="line">  标签: /tags</span><br><span class="line">  分类: /categories</span><br><span class="line">  关于: /about</span><br></pre></td></tr></table></figure>
+<p>在首页中，会自动隐藏指向首页的链接。但是，标签和分类的列表页，需要我们手动创建。</p>
+<h3 id="创建分类列表页和标签列表页"><a href="#创建分类列表页和标签列表页" class="headerlink" title="创建分类列表页和标签列表页"></a>创建分类列表页和标签列表页</h3><p>hexo 默认是没有分类和标签列表页的，本主题已经提供了对这两个页面的支持，但需要手动生成对应的页面。</p>
+<p>要生成标签列表页，在博客主目录中执行如下命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>这样，会生成一个 <code>source/tags/index.md</code> 文件，编辑文件，修改文件的 <code>type</code> 项为 <code>tags</code>，如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> 标签</span><br><span class="line"><span class="attr">date:</span> <span class="number">2016</span><span class="bullet">-01</span><span class="bullet">-16</span> <span class="number">06</span>:<span class="number">17</span>:<span class="number">29</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">"tags"</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>同样，创建分类列表页：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>编辑 <code>source/categories/index.md</code> 如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> 分类</span><br><span class="line"><span class="attr">date:</span> <span class="number">2015</span><span class="bullet">-08</span><span class="bullet">-03</span> <span class="number">14</span>:<span class="number">19</span>:<span class="number">29</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">"categories"</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<h2 id="社交网站链接配置"><a href="#社交网站链接配置" class="headerlink" title="社交网站链接配置"></a>社交网站链接配置</h2><p>在主页和点击头像弹出的个人信息卡片中，显示有社交网站的链接，需要在主题的配置文件 <code>theme/random/_config.yml</code> 中添加对应的配置，如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line"><span class="attr">  GitHub:</span> https://github.com/stiekel</span><br><span class="line">  Coding.NET: https://coding.net/u/Stiekel</span><br><span class="line"><span class="attr">  Twitter:</span> https://twitter.com/SidCN</span><br><span class="line"><span class="attr">  Weibo:</span> http://weibo.com/sidcn</span><br><span class="line"><span class="attr">  DouBan:</span> http://www.douban.com/people/Stiekel/</span><br></pre></td></tr></table></figure>
+<p>在显示的时候，会自动根据社交网站的 url ，来显示对应的图标。除了上述几个，另外还支持 Facebook / Google Plus / Dribbble / LinkedIn / NPMjs 等。</p>
+<p>如果您喜欢的社交网站不在其中，欢迎提 <a href="https://github.com/stiekel/hexo-theme-random/issues" target="_blank" rel="external">issue</a>。</p>
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><p>主题安装后，不需要任何配置，也可以很好的显示。</p>
+<h3 id="背景图来源的配置"><a href="#背景图来源的配置" class="headerlink" title="背景图来源的配置"></a>背景图来源的配置</h3><p>对于轮播的背景图片，有两种来源，一是使用指定的图片，二是使用 <a href="https://source.unsplash.com/" target="_blank" rel="external">unsplash</a> 提供的随机图片。</p>
+<p>如果使用 unsplash 的图片，则可以在主题的配置文件 <code>_config.yml</code> 中进行配置，参数的具体意见，请参见 <a href="https://unsplash.it/" target="_blank" rel="external">unsplash文档</a>：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">unsplashConfig:</span></span><br><span class="line">  <span class="comment"># 关于这几个配置项的说明，请参见 https://unsplash.it/</span></span><br><span class="line">  <span class="comment"># blur: true # 给图片增加模糊特效</span></span><br><span class="line"><span class="attr">  gravity:</span> <span class="string">'north'</span> <span class="comment"># north, east, south, west, center # 图片翻转</span></span><br><span class="line">  <span class="comment"># greyscale: true # 使用灰度图片</span></span><br></pre></td></tr></table></figure>
+<p>当然，也可以自己配置背景图片，也是在主题配置文件中进行，如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">backgroundImages:</span></span><br><span class="line"><span class="attr">- http:</span>//<span class="number">7</span>te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/<span class="number">1</span>/w/__width__/h/__height__</span><br><span class="line"><span class="attr">- http:</span>//<span class="number">7</span>te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/<span class="number">1</span>/w/__width__/h/__height__</span><br><span class="line"><span class="attr">- http:</span>//<span class="number">7</span>te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/<span class="number">1</span>/w/__width__/h/__height__</span><br><span class="line"><span class="attr">- http:</span>//<span class="number">7</span>te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/<span class="number">1</span>/w/__width__/h/__height__</span><br><span class="line"><span class="attr">- http:</span>//<span class="number">7</span>te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/<span class="number">1</span>/w/__width__/h/__height__</span><br></pre></td></tr></table></figure>
+<p>URL 中的 <code>__width__</code> 和 <code>__height__</code> ，在请求时，会替换为浏览器的宽度和高度值，如果你的图片服务器支持按分辨率裁剪，那就可以用得上。</p>
+<h3 id="背景图轮播的配置"><a href="#背景图轮播的配置" class="headerlink" title="背景图轮播的配置"></a>背景图轮播的配置</h3><p>背景图轮播，使用的是 <a href="http://vegas.jaysalvat.com" target="_blank" rel="external">vegas</a> ，也是在主题的配置文件中进行自定义：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">vegasConfig:</span></span><br><span class="line">  <span class="comment"># animation: 'random'</span></span><br><span class="line">  preload­Image: <span class="literal">true</span> <span class="comment"># 图片预加载配置</span></span><br><span class="line"><span class="attr">  transition:</span> <span class="comment"># 图片的切换物资</span></span><br><span class="line"><span class="bullet">    -</span> slideLeft2</span><br><span class="line"><span class="bullet">    -</span> slideRight2</span><br><span class="line">    <span class="comment"># - zoomIn</span></span><br><span class="line">    <span class="comment"># - swirLeft</span></span><br><span class="line">    <span class="comment"># - swirRight</span></span><br><span class="line">    <span class="comment"># - flash</span></span><br><span class="line"><span class="bullet">    -</span> flash2</span><br><span class="line">  <span class="comment"># transition: 'swirlRight' # 可以只配置一个</span></span><br><span class="line"><span class="attr">  timer:</span> <span class="literal">true</span> <span class="comment"># 是否显示时间进度条</span></span><br><span class="line"><span class="attr">  delay:</span> <span class="number">5000</span> <span class="comment"># 每张图片的显示时间</span></span><br><span class="line"><span class="attr">  shuffle:</span> <span class="literal">true</span> <span class="comment"># 按顺序播放，还是随机播放</span></span><br><span class="line"><span class="attr">  count:</span> <span class="number">10</span> <span class="comment">#一共多少张图片</span></span><br></pre></td></tr></table></figure>
+<p>具体参数的意义，请参见 <a href="http://vegas.jaysalvat.com/documentation/settings/" target="_blank" rel="external">vegas 文档</a>。</p>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><ul>
+<li>背景轮插插件： <a href="http://vegas.jaysalvat.com/" target="_blank" rel="external">vegas</a></li>
+<li>社交网站链接图标： <a href="http://iconfont.cn/" target="_blank" rel="external">iconfont</a></li>
+<li>Hexo 主题生成器： <a href="https://github.com/tcrowe/generator-hexo-theme" target="_blank" rel="external">generator-hexo-theme</a></li>
+</ul>
+<h2 id="反馈"><a href="#反馈" class="headerlink" title="反馈"></a>反馈</h2><p>欢迎使用，如果有问题，请您在 <a href="https://github.com/stiekel/hexo-theme-random/issues" target="_blank" rel="external">issue</a> 中提出来。</p>
+
+  </article>
+
+  
+<nav id="pagination">
+  
+
+  
+
+  
+    <a href="/2016/05/18/Hexo-Theme-Random-User-Guide/" class="next">Next post Hexo Theme Random User Guide &rarr;</a>
+  
+</nav>
+
+
+      
+      
+      
+    </div>
+  </div>
+
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by Stiekel using
+      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
+      <br>
+      
+    </div>
+  </div>
+  </div>
+
+</div>
+
+
+
+<div id="user-card">
+  <div class="center-field">
+    <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg">
+    <p id="description">A hexo theme with random fullscreen background image.</p>
+    <ul class="social-icon">
+  
+  
+    <li>
+      <a href="https://github.com/stiekel/hexo-theme-random">
+        
+          <i class="icon iconfont github">&#xe606;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://coding.net/u/Stiekel">
+        
+          <i class="icon iconfont coding">&#xe607;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://twitter.com/SidCN">
+        
+          <i class="icon iconfont twitter">&#xe600;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://weibo.com/sidcn">
+        
+          <i class="icon iconfont weibo">&#xe602;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://www.douban.com/people/Stiekel/">
+        
+          <i class="icon iconfont douban">&#xe609;</i>
+        
+      </a>
+    </li>
+  
+</ul>
+  </div>
+</div>
+
+<div id="btn-view">Hide</div>
+
+
+
+
+  
+  
+    <script src="/js/jquery-2.2.3.min.js"></script>
+  
+    <script src="/js/vegas.min.js"></script>
+  
+    <script src="/js/random.js"></script>
+  
+    <script src="/js/highlight.pack.js"></script>
+  
+    <script src="/js/jquery.mousewheel.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox.pack.js"></script>
+  
+
+
+  <script>
+  // fancybox
+  var backgroundImages = [];
+  
+  $('#post').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt || this.title;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'post' + i);
+    });
+
+  });
+  var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
+  var unsplashConfig = {"gravity":"north"};
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+  </script>
+
+</body>
+</html>
+
