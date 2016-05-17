@@ -2,11 +2,21 @@
 
 如果你：
 
-* 喜欢图片背景
+* 喜欢用大图做背景
 * 不喜欢文章摘要
 * 不喜欢在文章列表中翻页
 
 那这款主题很可能适合你。
+
+## 屏幕截图
+
+![hexo theme random index screenshot cn](http://two.yt/images/2016/05/16/nDj.png)
+
+![hexo theme random archives screenshot cn](http://two.yt/images/2016/05/16/mny.png)
+
+![hexo theme random category detail screenshot cn](http://two.yt/images/2016/05/16/3R4.png)
+
+![hexo theme random user card screenshot cn](http://two.yt/images/2016/05/16/oDm.png)
 
 ## 主题安装
 
@@ -16,7 +26,7 @@
 git clone https://github.com/stiekel/hexo-theme-random.git theme/random
 ```
 
-然后修改你博客的主配置文件，将主题设置为 `random`：
+然后修改博客的主配置文件，将主题设置为 `random`：
 
 ```yml
 theme: random
@@ -28,20 +38,22 @@ theme: random
 
 ### 链接
 
-在主题的配置文件中，可以设置首页和导航菜单中的链接，如下：
+在主题的配置文件中，可以设置首页和导航菜单中的链接，配置如下：
 
+```yml
 menu:
   首页: /
   文章: /archives
   标签: /tags
   分类: /categories
   关于: /about
+```
 
-在首页中，会自动隐藏针对首页的链接。但是，标签和分类的列表页，需要我们手动创建。
+在首页中，会自动隐藏指向首页的链接。但是，标签和分类的列表页，需要我们手动创建。
 
-### 创建分类表页和标签列表页
+### 创建分类列表页和标签列表页
 
-hexo 默认是没有分类和标签列表页的，本主题已经提供了对这两个页面的支持，但需要通过 hexo 的来生成对应的页面。
+hexo 默认是没有分类和标签列表页的，本主题已经提供了对这两个页面的支持，但需要手动生成对应的页面。
 
 要生成标签列表页，在博客主目录中执行如下命令：
 
@@ -75,7 +87,7 @@ comments: false
 
 ## 社交网站链接配置
 
-在主题，和弹出的个人信息卡片中，显示有社交网站的链接，需要在主题的配置文件 `theme/random/_config.yml` 中添加对应的配置，如下：
+在主页和点击头像弹出的个人信息卡片中，显示有社交网站的链接，需要在主题的配置文件 `theme/random/_config.yml` 中添加对应的配置，如下：
 
 ```yml
 social:
@@ -86,7 +98,7 @@ social:
   DouBan: http://www.douban.com/people/Stiekel/
 ```
 
-在显示的时候，会自动配置社交网站的 url ，来显示对应的图标。除了上述几个，另外还支持 Facebook / Google plus / Dribbble / LinkedIn / npmjs 等。
+在显示的时候，会自动根据社交网站的 url ，来显示对应的图标。除了上述几个，另外还支持 Facebook / Google Plus / Dribbble / LinkedIn / NPMjs 等。
 
 如果您喜欢的社交网站不在其中，欢迎提 [issue](https://github.com/stiekel/hexo-theme-random/issues)。
 
@@ -98,7 +110,7 @@ social:
 
 对于轮播的背景图片，有两种来源，一是使用指定的图片，二是使用 [unsplash](https://source.unsplash.com/) 提供的随机图片。
 
-如果使用 unsplash 的图片，则可以在主题的配置文件 `_config.yml` 中进行配置：
+如果使用 unsplash 的图片，则可以在主题的配置文件 `_config.yml` 中进行配置，参数的具体意见，请参见 [unsplash文档](https://unsplash.it/)：
 
 ```yml
 unsplashConfig:
@@ -123,7 +135,7 @@ URL 中的 `__width__` 和 `__height__` ，在请求时，会替换为浏览器�
 
 ### 背景图轮播的配置
 
-背景图轮播，使用的是 [vegas](http://vegas.jaysalvat.com) ，也是在主题的配置文件中进行：
+背景图轮播，使用的是 [vegas](http://vegas.jaysalvat.com) ，也是在主题的配置文件中进行自定义：
 
 ```yml
 vegasConfig:

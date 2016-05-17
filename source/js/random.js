@@ -10,7 +10,7 @@ $(function(){
       });
     });
   }
-  slides = [];
+  // slides = [];
   if(slides.length === 0) {
     var endWith = '';
     var greyscale = '';
