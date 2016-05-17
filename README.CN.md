@@ -32,6 +32,14 @@ git clone https://github.com/stiekel/hexo-theme-random.git theme/random
 theme: random
 ```
 
+## 头像设置
+
+可以在 Hexo 主配置文件，或者主题的配置文件 `theme/random/_config.yml` ，增加一个 `avatar` 配置，如下：
+
+```yml
+avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
+```
+
 ## 菜单与导航链接的设置
 
 显示在首页和导航的链接，可以在主题的配置文件（`theme/random/_config.yml`）中自定义。如果想链接到标签和分类的列表页，还需要自己手动创建对应页面。
@@ -162,6 +170,7 @@ vegasConfig:
 
 * 背景轮插插件： [vegas](http://vegas.jaysalvat.com/)
 * 社交网站链接图标： [iconfont](http://iconfont.cn/)
+* Hexo 主题生成器： [generator-hexo-theme](https://github.com/tcrowe/generator-hexo-theme)
 
 ## 反馈
 

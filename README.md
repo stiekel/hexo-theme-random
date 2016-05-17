@@ -25,6 +25,14 @@ modify the `theme` setting in hexo main config file `_config.yml` as following:
 theme: random
 ```
 
+## Avatar
+
+You can config the avatar in hexo main config file or theme config file as following:
+
+```yml
+avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
+```
+
 ## Nav links config
 
 Nav links in homepage and the top of other pages, you can config it in theme config file `theme/random/_config.yml`:
@@ -150,6 +158,7 @@ vegasConfig:
 
 * [Vegas](http://vegas.jaysalvat.com)
 * [iconfont](http://iconfont.cn/)
+* [generator-hexo-theme](https://github.com/tcrowe/generator-hexo-theme)
 
 ## Feedback
 
