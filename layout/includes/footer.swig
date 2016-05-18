@@ -13,8 +13,8 @@
     <script src="{{ url }}"></script>
   {% endfor %}
 {% endif %}
+<script>
 {% if theme.fancybox || config.fancybox %}
-  <script>
   // fancybox
   var backgroundImages = [];
   {% if theme.backgroundImages %}
@@ -24,7 +24,7 @@
   {% endif %}
   $('#post').each(function(i){
     $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
       var alt = this.alt || this.title;
       if (alt) $(this).after('<span class="caption">' + alt + '</span>');
       $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
@@ -32,14 +32,25 @@
     $(this).find('.fancybox').each(function(){
       $(this).attr('rel', 'post' + i);
     });
-
   });
   var vegasConfig = {{ JSON.stringify(theme.vegasConfig) }};
   var unsplashConfig = {{ JSON.stringify(theme.unsplashConfig) }};
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-  </script>
 {% endif %}
+{% if page.photos.length %}
+  $(".fancybox-thumb").fancybox({
+    prevEffect: 'none',
+    nextEffect: 'none',
+    helpers: {
+      title: {
+        type: 'outside'
+      },
+      thumbs: {
+        width: 50,
+        height: 50
+      }
+    }
+  });
+{% endif %}
+</script>
 </body>
 </html>

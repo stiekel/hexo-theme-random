@@ -13,6 +13,9 @@
       </div>
     {% else %}
       <h1 class="">{{ page_title }}</h1>
+      {% if page.photos.length %}
+        {% include 'includes/gallery.swig' %}
+      {% endif %}
       {% autoescape false %}{{page.content }}{% endautoescape %}
     {% endif %}
   </article>

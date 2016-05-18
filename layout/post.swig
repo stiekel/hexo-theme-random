@@ -34,6 +34,9 @@
       </span>
       {% endif %}
     </p>
+    {% if page.photos.length %}
+      {% include 'includes/gallery.swig' %}
+    {% endif %}
     {% autoescape false %}{{ page.content }}{% endautoescape %}
   </article>
 
