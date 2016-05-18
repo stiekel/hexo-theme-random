@@ -13,7 +13,7 @@
       <ul class="index-nav-link">
         {% for key in Object.keys(theme.menu)  %}
           {% if theme.menu[key] != '/'  %}
-            <li><a href="{{ theme.menu[key] }}">{{ key }}</a></li>
+            <li><a href="{{ url_for(theme.menu[key]) }}">{{ key }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>

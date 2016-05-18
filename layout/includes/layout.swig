@@ -14,7 +14,7 @@
       <div id="menu-list">
         <ul>
         {% for key in Object.keys(theme.menu) %}
-          <li><a href="{{ theme.menu[key] }}">{{ key }}</a></li>
+          <li><a href="{{ url_for(theme.menu[key]) }}">{{ key }}</a></li>
         {% endfor %}
         </ul>
       </div>
