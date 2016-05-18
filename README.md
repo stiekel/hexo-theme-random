@@ -11,6 +11,14 @@ If you
 
 This theme seems to suit you.
 
+## Screenshot
+
+![hexo theme random index screenshot en](http://two.yt/images/2016/05/17/2XM.png)
+![hexo theme random archives screenshot en](http://two.yt/images/2016/05/17/0Am.png)
+![hexo theme random category detail screenshot en](http://two.yt/images/2016/05/17/VGx.png)
+![hexo theme random user card screenshot en](http://two.yt/images/2016/05/17/K3x.png)
+
+
 ## Install
 
 execute this command in blog root path:
