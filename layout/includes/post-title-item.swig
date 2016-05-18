@@ -1,5 +1,5 @@
 <div class="post-title-item">
-  <a href="{{ config.root }}{{ postItem.path }}">{{ postItem.title }}</a>
+  <a href="{{ config.root }}{{ postItem.path }}">{{ truncate( postItem.title || trim(strip_html(postItem.content)), {length: 80}) }}</a>
   <p class="page-title-sub">
     <span id = "post-title-date">{{ date(postItem.date, 'M-D') }}</span>
     {% if postItem.categories.length %}
