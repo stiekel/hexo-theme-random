@@ -27,6 +27,18 @@
     {% endfor %}
     </span>
     {% endif %}
+    {% if postItem.photos %}
+      <br>
+      {% set i = 0 %}
+      {% for photo in postItem.photos %}
+        {% set i = i + 1 %}
+        {% if i <= 3 %}
+          <a class="fancybox-thumb" rel="fancybox-thumb" href="{{photo}}">
+            <img src="{{photo}}" />
+          </a>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
   </p>
   
 </div>
