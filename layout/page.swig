@@ -12,8 +12,8 @@
         {{ tagcloud({min_font: 16, max_font: 32, amount: 200, color: true, start_color: '#999', end_color: '#444'}) }}
       </div>
     {% else %}
-    {% autoescape false %}{{page.content }}{% endautoescape %}
       <h1 class="">{{ page_title }}</h1>
+      {% autoescape false %}{{page.content }}{% endautoescape %}
     {% endif %}
   </article>
 
