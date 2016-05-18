@@ -29,6 +29,7 @@ stylesheets:
 - /css/jquery.fancybox.css
 - /css/iconfont/iconfont.css
 - /css/jquery.fancybox-thumbs.css
+- /css/plyr.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -39,6 +40,7 @@ scripts:
 - /js/jquery.mousewheel.pack.js
 - /js/jquery.fancybox.pack.js
 - /js/jquery.fancybox-thumbs.js
+- /js/plyr.js
 
 backgroundImages:
 # - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__

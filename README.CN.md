@@ -171,6 +171,7 @@ vegasConfig:
 * 背景轮插插件： [vegas](http://vegas.jaysalvat.com/)
 * 社交网站链接图标： [iconfont](http://iconfont.cn/)
 * Hexo 主题生成器： [generator-hexo-theme](https://github.com/tcrowe/generator-hexo-theme)
+* 视频播放： [plyr](https://plyr.io/)
 
 ## 反馈
 

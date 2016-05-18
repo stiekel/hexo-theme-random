@@ -167,6 +167,7 @@ vegasConfig:
 * [Vegas](http://vegas.jaysalvat.com)
 * [iconfont](http://iconfont.cn/)
 * [generator-hexo-theme](https://github.com/tcrowe/generator-hexo-theme)
+* [plyr](https://plyr.io/)
 
 ## Feedback
 
