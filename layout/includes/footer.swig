@@ -10,7 +10,7 @@
 {% if theme.scripts !== undefined && theme.scripts.length > 0 %}
   {# scripts list from config.yml #}
   {% for url in theme.scripts %}
-    <script src="{{ url }}"></script>
+    <script src="{{ url_for(url) }}"></script>
   {% endfor %}
 {% endif %}
 <script>
