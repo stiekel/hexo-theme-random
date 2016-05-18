@@ -8,6 +8,7 @@
       {% if page.date !== page.updated %}
         <span id = "post-title-updated">{{ __('updated_at') }} {{ date(page.updated) }}</span>
       {% endif %}
+      {% if page.categories.length %}
       <span id = "post-title-categories">{{ __('category_title') }}
       {% set i = 0 %}
       {% for cat in page.categories %}
@@ -18,6 +19,8 @@
         <a href="{{ url_for(cat.path) }}">{{ cat.name }}</a>
       {% endfor %}
       </span>
+      {% endif %}
+      {% if page.tags.length %}
       <span id = "post-title-tags">
       {{ __('tag_title') }}
       {% set i = 0 %}
@@ -29,6 +32,7 @@
         <a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
       {% endfor %}
       </span>
+      {% endif %}
     </p>
     {% autoescape false %}{{ page.content }}{% endautoescape %}
   </article>
