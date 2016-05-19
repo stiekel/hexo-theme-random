@@ -1,5 +1,10 @@
 # hexo-theme-random 中文文档
 
+## Demo
+
+* [Demo on heroku]([DEMO](http://hexo-theme-random.herokuapp.com/)
+* [不可能不确定](http://chensd.com)
+
 如果你：
 
 * 喜欢用大图做背景

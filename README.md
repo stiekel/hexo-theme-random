@@ -1,6 +1,11 @@
 # hexo-theme-random
 A hexo theme with random fullscreen background image.
 
+## Demo
+
+* [Demo on heroku]([DEMO](http://hexo-theme-random.herokuapp.com/)
+* [author's blog](http://chensd.com)(Chinese)
+
 ## [中文文档](README.CN.md)
 
 If you
