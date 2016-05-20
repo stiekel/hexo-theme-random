@@ -1,5 +1,12 @@
 <div class="post-title-item">
-  <a href="{{ config.root }}{{ postItem.path }}">{{ truncate( postItem.title || trim(strip_html(postItem.content)), {length: 80}) }}</a>
+  {% set postTitle = postItem.title || trim(strip_html(postItem.content))  %}
+  <a href="{{ config.root }}{{ postItem.path }}">
+  {% if postTitle.length < 80 %}
+    {{ postTitle }}
+  {% else %}
+    {{ truncate( postTitle, {length: 80}) }}
+  {% endif %}
+  </a>
   <p class="page-title-sub">
     <span id = "post-title-date">{{ date(postItem.date, 'M-D') }}</span>
     {% if postItem.categories.length %}
