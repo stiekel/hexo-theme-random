@@ -2,7 +2,7 @@
 
 ## Demo
 
-* [Demo on heroku]([DEMO](http://hexo-theme-random.herokuapp.com/)
+* [Demo on Openshift](http://random-stiekel.rhcloud.com/)
 * [不可能不确定](http://chensd.com)
 
 如果你：

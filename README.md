@@ -3,8 +3,8 @@ A hexo theme with random fullscreen background image.
 
 ## Demo
 
-* [Demo on heroku]([DEMO](http://hexo-theme-random.herokuapp.com/)
-* [author's blog](http://chensd.com)(Chinese)
+* [Demo on Openshift](http://random-stiekel.rhcloud.com/)
+* [stiekel's blog](http://chensd.com)(Chinese)
 
 ## [中文文档](README.CN.md)
 
