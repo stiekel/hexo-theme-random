@@ -33,9 +33,10 @@
       $(this).attr('rel', 'post' + i);
     });
   });
-  var vegasConfig = {{ JSON.stringify(theme.vegasConfig) }};
-  var unsplashConfig = {{ JSON.stringify(theme.unsplashConfig) }};
+  $(".fancybox").fancybox();
 {% endif %}
+var vegasConfig = {{ JSON.stringify(theme.vegasConfig) }};
+var unsplashConfig = {{ JSON.stringify(theme.unsplashConfig) }};
 
 $(".fancybox-thumb").fancybox({
   prevEffect: 'none',
