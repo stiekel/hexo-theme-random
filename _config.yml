@@ -77,3 +77,6 @@ avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
 
 # do not like fancybox, set this as false, this will turn it off
 fancybox: true
+
+# set the visibility of hide button in left bottom.
+hideButtonVisibility: true

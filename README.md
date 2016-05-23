@@ -167,6 +167,14 @@ vegasConfig:
   count: 28
 ```
 
+### Hide button
+
+There is a __Hide__ button on the left bottom of every page, all of the content except button itself will be hide while user click this button. If you want to hide this button, please change `hideButtonVisibility` to `false` in theme config or main config file:
+
+```yml
+hideButtonVisibility: false
+```
+
 ## Thanks
 
 * [Vegas](http://vegas.jaysalvat.com)

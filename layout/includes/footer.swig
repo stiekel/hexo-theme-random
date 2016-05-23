@@ -1,5 +1,7 @@
 {% include 'user-card.swig' %}
+{% if config.hideButtonVisibility || theme.hideButtonVisibility %}
 <div id="btn-view">Hide</div>
+{% endif %}
 {% if config.baidu_analytics || theme.baidu_analytics || config.baidu_tongji || theme.baidu_tongji %}
   {% include 'baidu-tongji.swig' %}
 {% endif %}

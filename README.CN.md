@@ -171,6 +171,14 @@ vegasConfig:
 
 具体参数的意义，请参见 [vegas 文档](http://vegas.jaysalvat.com/documentation/settings/)。
 
+### Hide 按钮
+
+在每个页面的左下角，都有一个 __Hide__ 按钮，点击这个按钮之后，按钮之外的东西都会被隐藏。如果不想显示这个按钮，可以在主题或者 Hexo 的主配置文件中修改 `hideButtonVisibility`，设置为 `false`：
+
+```yml
+hideButtonVisibility: false
+```
+
 ## 感谢
 
 * 背景轮插插件： [vegas](http://vegas.jaysalvat.com/)
