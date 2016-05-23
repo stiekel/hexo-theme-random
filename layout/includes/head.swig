@@ -26,7 +26,11 @@
   {% if config.keywords || theme.keywords %}
   <meta name="keywords" content="{{config.keywords || theme.keywords}}">
   {% endif %}
-  <meta name="description" content="{{ page.description || strip_html(page.excerpt) || strip_html(page.content) || config.description }}">
+  {% set metaDescription = trim(strip_html(page.description || page.excerpt || page.content || config.description)) %}
+  {% if metaDescription.length > 200 %}
+    {{ truncate( metaDescription, {length: 200}) }}
+  {% endif %}
+  <meta name="description" content="{{ metaDescription }}">
   <title>{{ pageTitle }}</title>
   {% if config.feed || theme.feed %}
     {{ feed_tag(config.feed.path || theme.feed.path, {title: config.title, type: config.feed.type || theme.feed.type}) }}
