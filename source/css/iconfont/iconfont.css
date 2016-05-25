@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1463278282'); /* IE9*/
-  src: url('iconfont.eot?t=1463278282#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1463278282') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1463278282') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1463278282#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1464216130'); /* IE9*/
+  src: url('iconfont.eot?t=1464216130#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1464216130') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1464216130') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1464216130#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -22,6 +22,7 @@
 .icon-facebook:before { content: "\e604"; }
 .icon-dribbble:before { content: "\e605"; }
 .icon-douban:before { content: "\e609"; }
+.icon-youtube:before { content: "\e60a"; }
 .icon-github:before { content: "\e606"; }
 .icon-coding-copy:before { content: "\e607"; }
 .icon-slice1:before { content: "\e608"; }
