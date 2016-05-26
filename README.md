@@ -114,7 +114,7 @@ If you need more, please create [issue](https://github.com/stiekel/hexo-theme-ra
 
 ## Third party Service
 
-Random support Google Analytics / Baidu Tongji / Disqus / Duoshuo / Uyan, You can config these in theme config file or hexo main config file:
+Random support [Google Analytics](https://www.google.com/analytics/) / [Baidu Tongji](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [Duoshuo](http://duoshuo.com/) / [Uyan](http://www.uyan.cc/), You can config these in theme config file or hexo main config file:
 
 ```yml
 # Google analytics
