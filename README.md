@@ -112,6 +112,25 @@ It will replace text into icon automaticalcally, Random theme support to show ic
 
 If you need more, please create [issue](https://github.com/stiekel/hexo-theme-random/issues).
 
+## Third party Service
+
+Random support Google Analytics / Baidu Tongji / Disqus / Duoshuo / Uyan, You can config these in theme config file or hexo main config file:
+
+```yml
+# Google analytics
+google_analytics:
+# Baidu tongji
+baidu_analytics:
+# Duoshuo
+duoshuo_shortname:
+# Disqus
+disqus_shortname:
+# Uyan
+uyan_id:
+```
+
+Just add the key or code after the ':'.
+
 ## Theme config
 
 The following settings is not prerequisite.

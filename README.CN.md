@@ -115,6 +115,25 @@ social:
 
 如果您喜欢的社交网站不在其中，欢迎提 [issue](https://github.com/stiekel/hexo-theme-random/issues)。
 
+## 第三方服务的配置
+
+本主题支持 Google Analytics / Baidu Tongji / Disqus / Duoshuo / Uyan，即可以在主题配置文件中设置，也可以在博客的主配置文件中设置，增加项目如下：
+
+```yml
+# Google analytics
+google_analytics:
+# Baidu tongji
+baidu_analytics:
+# Duoshuo
+duoshuo_shortname:
+# Disqus
+disqus_shortname:
+# Uyan
+uyan_id:
+```
+
+对应各个服务的 key 或者 code，直接添加在冒号之后即可。
+
 ## 主题配置
 
 主题安装后，不需要任何配置，也可以很好的显示。

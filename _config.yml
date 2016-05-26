@@ -18,6 +18,17 @@ social:
   Weibo: http://weibo.com/sidcn
   DouBan: http://www.douban.com/people/Stiekel/
 
+# Google analytics
+google_analytics:
+# Baidu tongji
+baidu_analytics:
+# Duoshuo
+duoshuo_shortname:
+# Disqus
+disqus_shortname:
+# Uyan
+uyan_id:
+
 # Miscelaneous
 favicon: /favicon.ico
 
