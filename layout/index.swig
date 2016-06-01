@@ -11,9 +11,10 @@
     <hr >
     <div class="center-field">
       <ul class="index-nav-link">
-        {% for key in Object.keys(theme.menu)  %}
-          {% if theme.menu[key] != '/'  %}
-            <li><a href="{{ url_for(theme.menu[key]) }}">{{ key }}</a></li>
+        {% set menu = config.menu || theme.menu %}
+        {% for key in Object.keys(menu)  %}
+          {% if menu[key] != '/'  %}
+            <li><a href="{{ url_for(menu[key]) }}">{{ key }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
