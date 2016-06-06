@@ -1,5 +1,7 @@
 // desktop max width
 desktopWidth = 760px
+mdDesktopWidth = 860px
+lgDesktopWidth = 960px
 // content margin site on desktop
 marginBorder = 10px
 opacityValue = 0.85
@@ -7,12 +9,15 @@ opacityValue = 0.85
 mobileMaxWidth = 480px
 mobileOpacityValue = 0.95
 
-body {
+body
   background-color: #BDC3C7;
   margin: 0px;
   font-family: Lato, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 16px;
-}
+  font-size: 20px;
+  @media (max-width: lgDesktopWidth)
+    font-size: 18px;
+  @media (max-width: mdDesktopWidth)
+    font-size: 16px;
 
 a {
   text-decoration: none;
@@ -26,10 +31,18 @@ a:hover {
 }
 
 #container {
-  width: desktopWidth;
   position: absolute;
   left: 50%;
-  margin-left: - (desktopWidth / 2);
+  width: lgDesktopWidth;
+  margin-left: - (lgDesktopWidth / 2);
+  @media (max-width: lgDesktopWidth) {
+    width: mdDesktopWidth;
+    margin-left: - (mdDesktopWidth / 2);
+  }
+  @media (max-width: mdDesktopWidth) {
+    width: desktopWidth;
+    margin-left: - (desktopWidth / 2);
+  }
 }
 
 #menu-outer, #container
@@ -43,9 +56,17 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: - (desktopWidth / 2);
   margin-top: -200px;
-  width: desktopWidth;
+  width: lgDesktopWidth;
+  margin-left: - (lgDesktopWidth / 2);
+  @media (max-width: lgDesktopWidth) {
+    width: mdDesktopWidth;
+    margin-left: - (mdDesktopWidth / 2);
+  }
+  @media (max-width: mdDesktopWidth) {
+    width: desktopWidth;
+    margin-left: - (desktopWidth / 2);
+  }
 }
 
 #random-index {
@@ -134,14 +155,14 @@ a:hover {
 #menu-inner
   line-height: 50px;
   height: 50px;
-  width: desktopWidth - marginBorder * 2;
-  // text-align: center;
-  // display: table-cell;
-  // margin: 0 auto;
   height: 20px;
   padding: 0px marginBorder 0 marginBorder;
-  // width: 95%;
-
+  width: lgDesktopWidth - marginBorder * 2;
+  @media (max-width: lgDesktopWidth)
+    width: mdDesktopWidth - marginBorder * 2;
+  @media (max-width: mdDesktopWidth)
+    width: desktopWidth - marginBorder * 2;
+    
 #menu-inner .left
   float: left;
 
@@ -193,8 +214,10 @@ a:hover {
   text-align: center;
   padding: marginBorder;
   padding-top: 40px;
-  font-size: 12px;
   background-color: #fff;
+  font-size: 14px;
+  @media (max-width: lgDesktopWidth)
+    font-size: 12px;
 // bottom end
 
 // content start
@@ -300,14 +323,20 @@ ul.category-list li a:hover
 
 .page-title-sub
   color: #888;
-  font-size: 12px;
+  font-size: 14px;
+  @media (max-width: lgDesktopWidth)
+    font-size: 12px;
 
 .page-title-sub span
   margin-right: 5px;
 
 article img
-  max-width: desktopWidth - marginBorder * 2;
-
+  max-width: lgDesktopWidth - marginBorder * 2;
+  @media (max-width: lgDesktopWidth)
+    max-width: mdDesktopWidth - marginBorder * 2;
+  @media (max-width: mdDesktopWidth)
+    max-width: desktopWidth - marginBorder * 2;
+    
 #user-card
   text-align: center;
   color: #333;
