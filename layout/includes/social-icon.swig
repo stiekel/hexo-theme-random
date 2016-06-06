@@ -25,6 +25,8 @@
           <i class="icon iconfont npmjs">&#xe608;</i>
         {% elif socialConfig[i]|replace('youtube.com', '', 'g')  !== socialConfig[i] %}
           <i class="icon iconfont youtube">&#xe60a;</i>
+        {% elif socialConfig[i]|replace('zhihu.com', '', 'g')  !== socialConfig[i] %}
+          <i class="icon iconfont zhihu">&#xe60b;</i>
         {% else %}
           {{i}}
         {% endif %}
