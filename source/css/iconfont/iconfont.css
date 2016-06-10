@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1465252393'); /* IE9*/
-  src: url('iconfont.eot?t=1465252393#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1465252393') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1465252393') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1465252393#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1465521210'); /* IE9*/
+  src: url('iconfont.eot?t=1465521210#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1465521210') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1465521210') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1465521210#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -20,6 +20,7 @@
 .icon-weibo:before { content: "\e602"; }
 .icon-google:before { content: "\e603"; }
 .icon-facebook:before { content: "\e604"; }
+.icon-lofter:before { content: "\e60d"; }
 .icon-dribbble:before { content: "\e605"; }
 .icon-douban:before { content: "\e609"; }
 .icon-youtube:before { content: "\e60a"; }

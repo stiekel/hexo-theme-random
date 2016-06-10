@@ -27,6 +27,8 @@
           <i class="icon iconfont youtube">&#xe60a;</i>
         {% elif socialConfig[i] && socialConfig[i]|replace('zhihu.com', '', 'g')  !== socialConfig[i] %}
           <i class="icon iconfont zhihu">&#xe60b;</i>
+        {% elif socialConfig[i] && socialConfig[i]|replace('lofter.com', '', 'g')  !== socialConfig[i] %}
+          <i class="icon iconfont lofter">&#xe60d;</i>
         {% else %}
           {{i}}
         {% endif %}
