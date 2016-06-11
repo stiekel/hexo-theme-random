@@ -494,6 +494,45 @@ article img
   font-size: 14px;
   color: #999;
 
+.random-toc-area
+  position: fixed;
+  width: 200px;
+  right: 0px;
+  top: 0px;
+  display: block;
+  @media (max-width: lgDesktopWidth + 400px)
+    display: none;
+    
+.random-toc
+  // top: 30px;
+  background: #444;
+  color: #bbb;
+  height: 500px;
+  margin-top: 0px;
+  font-size: 12px;
+  height: 100%;
+  overflow-y: auto;
+.random-toc ol
+  padding-left: 5px;
+.random-toc h2
+  text-align: center;
+.random-toc a
+  color: #bbb;
+  display: block;
+.random-toc li:hover
+  background-color: #666;
+.btn-hide-toc
+  // top: 0px;
+  border: none;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  background-color: #666;
+  height: 30px;
+  color: #bbb;
+.btn-hide-toc:hover
+  background-color: #888;
+
 // side-navigate, hide while max-width < desktopWidth + 300px
 @media (max-width: desktopWidth + 300px)
   .side-navigate

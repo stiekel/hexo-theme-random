@@ -39,6 +39,6 @@
     {% endif %}
     {% autoescape false %}{{ page.content }}{% endautoescape %}
   </article>
-
+  {% include 'includes/toc.swig' %}
   {% include 'includes/pagination.swig' %}
 {% endblock %}

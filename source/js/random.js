@@ -129,3 +129,18 @@ function openUserCard() {
     afterClose: showHideToggle
   });
 }
+
+var isTOCShow = true;
+function TOCToggle() {
+  if(isTOCShow) {
+    $(".random-toc").show();
+    $(".btn-hide-toc-show").hide();
+    $(".btn-hide-toc-hide").show();
+  } else {
+    $(".random-toc").hide();
+    $(".btn-hide-toc-show").show();
+    $(".btn-hide-toc-hide").hide();
+  }
+  isTOCShow = !isTOCShow;
+}
+TOCToggle();

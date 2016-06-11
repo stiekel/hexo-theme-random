@@ -24,3 +24,7 @@ page_number_part3: .
 
 created_at: Created at
 updated_at: Updated at
+
+toc: Table of Content
+hide_toc: Hide TOC
+show_toc: Show TOC
