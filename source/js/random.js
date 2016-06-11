@@ -99,6 +99,13 @@ $(function(){
 
     lastScrollTop = currentST;
   }
+  // toc control
+  TOCToggle();
+  // if table of content is empty, hide the hole div
+  if($(".random-toc ol").children().length <= 3) {
+
+    $(".random-toc-area").hide();
+  }
 });
 
 var hideAll = false;
@@ -143,4 +150,3 @@ function TOCToggle() {
   }
   isTOCShow = !isTOCShow;
 }
-TOCToggle();
