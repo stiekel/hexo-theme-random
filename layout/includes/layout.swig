@@ -1,7 +1,8 @@
 {% include 'head.swig' %}
 <body>
 {% include 'side-pagination.swig' %}
-<div id="container" class="hide-area">
+<div id="outer-container" class="hide-area">
+<div id="container">
   <div id="menu-outer" class="slide-down">
     <div id="menu-inner">
       <div id="brand">
@@ -57,7 +58,7 @@
       {% endif %}
     </div>
   </div>
-  </div>
+</div>
 
 </div>
 {% if page.comments && (theme.duoshuo_shortname || config.duoshuo_shortname) %}

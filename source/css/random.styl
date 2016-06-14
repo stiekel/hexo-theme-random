@@ -28,7 +28,7 @@ a:hover {
   text-decoration: underline;
 }
 
-#container {
+#outer-container {
   position: absolute;
   left: 50%;
   width: lgDesktopWidth;
@@ -41,9 +41,11 @@ a:hover {
     width: desktopWidth;
     margin-left: - (desktopWidth / 2);
   }
+  // box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .55);
+  box-shadow: 0 0 2.5em #5d656c;
 }
 
-#menu-outer, #container
+#menu-outer, #outer-container
   background-color: #fff;
 
 #menu-outer, #bottom-outer, #random-index {
@@ -551,9 +553,9 @@ figure.highlight
 
 // mobile
 @media (max-width: desktopWidth)
-  #container,.random-center,#menu-outer
+  #outer-container,.random-center,#menu-outer
     width: 100%;
-  #container
+  #outer-container
     left: 0%;
     margin-left: 0px;
   #menu-inner
