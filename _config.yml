@@ -53,6 +53,12 @@ scripts:
 - /js/jquery.fancybox-thumbs.js
 - /js/plyr.js
 
+# ignore visitor on special host server, for example on you local computer.
+isIgnoreSpecialHostVisitor: true
+ignoreHostList:
+  - localhost
+  - 127.0.0.1
+
 backgroundImages:
 # - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__
 # - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__
