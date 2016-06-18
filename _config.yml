@@ -53,7 +53,7 @@ scripts:
 - /js/jquery.fancybox-thumbs.js
 - /js/plyr.js
 
-# ignore visitor on special host server, for example on you local computer.
+# ignore visitor statistics on special server, for example on you local computer or debugging server
 isIgnoreSpecialHostVisitor: true
 ignoreHostList:
   - localhost

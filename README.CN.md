@@ -198,6 +198,17 @@ vegasConfig:
 hideButtonVisibility: false
 ```
 
+### 忽略特定服务器的访问统计
+
+当你在调试和写作的时候，可以不将这些访问发送到 Google Analytics 或百度统计，只需要将你的调试服务器地址加入到下面的配置变量即可：
+
+```yml
+isIgnoreSpecialHostVisitor: true
+ignoreHostList:
+  - localhost
+  - 127.0.0.1
+```
+
 ## 感谢
 
 * 背景轮插插件： [vegas](http://vegas.jaysalvat.com/)

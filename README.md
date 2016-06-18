@@ -194,6 +194,17 @@ There is a __Hide__ button on the left bottom of every page, all of the content 
 hideButtonVisibility: false
 ```
 
+### Ignore visitor statistics on special server
+
+When you are debugging or writting, you may do NOT like to send the visitor statistics to Google Analytics or Baidu Tongji, Just add the debugging server address to the following variables:
+
+```yml
+isIgnoreSpecialHostVisitor: true
+ignoreHostList:
+  - localhost
+  - 127.0.0.1
+```
+
 ## Thanks
 
 * [Vegas](http://vegas.jaysalvat.com)
