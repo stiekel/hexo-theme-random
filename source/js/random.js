@@ -116,6 +116,7 @@ function showHideToggle() {
   } else {
     $(".hide-area").hide();
     $("#btn-view").html('Show');
+    $("#menu-outer").removeClass('slide-up').addClass('slide-down');
   }
   hideAll = !hideAll;
 }
