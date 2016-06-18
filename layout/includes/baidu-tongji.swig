@@ -1,6 +1,5 @@
 <script>
 if(isTriggerAnalytics) {
-  console.log('tongji running');
   var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
