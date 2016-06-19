@@ -8,6 +8,7 @@ opacityValue = 0.85
 // mobile max width
 mobileMaxWidth = 480px
 mobileOpacityValue = 0.95
+codeFontFamily = Consolas, Monaco, Courier New, Lucida Console;
 
 body
   background-color: #BDC3C7;
@@ -546,6 +547,15 @@ figure.highlight
   td.gutter
     padding-right: 20px;
 
+code
+  font-family: codeFontFamily;
+  background-color: #ddd;
+  font-style: italic;
+  padding-left: 12px;
+  padding-right: 12px;
+
+table .line
+  font-family: codeFontFamily;
 
 // side-navigate, hide while max-width < desktopWidth + 300px
 @media (max-width: desktopWidth + 300px)
