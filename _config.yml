@@ -28,6 +28,18 @@ duoshuo_shortname:
 disqus_shortname:
 # Uyan
 uyan_id:
+# jiaThis id
+# if you want to change the style of jiaThis, please go to chage the following file:
+# theme/random/layouts/includes/jiathis.swig
+jiaThis_uid: 
+jiathisConfig:
+  data_track_clickback: true
+  summary: ""
+  showClose: true
+  shortUrl: false
+  hideMore: false
+
+
 
 # Miscelaneous
 favicon: /favicon.ico

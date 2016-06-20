@@ -114,7 +114,7 @@ If you need more, please create [issue](https://github.com/stiekel/hexo-theme-ra
 
 ## Third party Service
 
-Random support [Google Analytics](https://www.google.com/analytics/) / [Baidu Tongji](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [Duoshuo](http://duoshuo.com/) / [Uyan](http://www.uyan.cc/), You can config these in theme config file or hexo main config file:
+Random support [Google Analytics](https://www.google.com/analytics/) / [Baidu Tongji](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [Duoshuo](http://duoshuo.com/) / [Uyan](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/), You can config these in theme config file or hexo main config file:
 
 ```yml
 # Google analytics
@@ -127,6 +127,14 @@ duoshuo_shortname:
 disqus_shortname:
 # Uyan
 uyan_id:
+# jiaThis
+jiaThis_uid: 
+jiathisConfig:
+  data_track_clickback: true
+  summary: ""
+  showClose: true
+  shortUrl: false
+  hideMore: false
 ```
 
 Just add the key or code after the ':'.

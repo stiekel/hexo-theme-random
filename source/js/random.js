@@ -113,7 +113,9 @@ function showHideToggle() {
   if(hideAll) {
     $(".hide-area").show();
     $("#btn-view").html('Hide');
+    $(".jiathis_style").css({'display': 'block'});
   } else {
+    $(".jiathis_style").css({'display': 'none'});
     $(".hide-area").hide();
     $("#btn-view").html('Show');
     $("#menu-outer").removeClass('slide-up').addClass('slide-down');
