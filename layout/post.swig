@@ -41,4 +41,5 @@
   </article>
   {% include 'includes/toc.swig' %}
   {% include 'includes/pagination.swig' %}
+  {% include 'includes/jiathis.swig' %}
 {% endblock %}

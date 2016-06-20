@@ -21,4 +21,5 @@
   </article>
 
   {% include 'includes/pagination.swig' %}
+  {% include 'includes/jiathis.swig' %}
 {% endblock %}

@@ -2,12 +2,6 @@
 {% if config.hideButtonVisibility || theme.hideButtonVisibility %}
 <div id="btn-view">Hide</div>
 {% endif %}
-{% if config.jiaThis_uid || theme.jiaTHis_uid %}
-  <script type="text/javascript">
-    var jiathis_config = {{ JSON.stringify(config.jiathisConfig || theme.jiathisConfig) }}
-  </script>
-  {% include 'jiathis.swig' %}
-{% endif %}
 <script>
 // is trigger analytics / tongji script
 var isIgnoreHost = false;
