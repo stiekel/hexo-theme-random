@@ -111,7 +111,7 @@ social:
   DouBan: http://www.douban.com/people/Stiekel/
 ```
 
-在显示的时候，会自动根据社交网站的 url ，来显示对应的图标。除了上述几个，另外还支持 Facebook / Google Plus / Dribbble / LinkedIn / NPMjs / Youtube / 知乎。
+在显示的时候，会自动根据社交网站的 url ，来显示对应的图标。除了上述几个，另外还支持 Facebook / Google Plus / Dribbble / LinkedIn / NPMjs / Youtube / 知乎 / Quora。
 
 如果您喜欢的社交网站不在其中，欢迎提 [issue](https://github.com/stiekel/hexo-theme-random/issues)。
 

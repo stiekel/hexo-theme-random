@@ -108,7 +108,7 @@ social:
   DouBan: http://www.douban.com/people/Stiekel/
 ```
 
-It will replace text into icon automaticalcally, Random theme support to show icon of Facebook / Google Plus / Dribbble / LinkedIn / NPMjs / Youtube / Zhihu.
+It will replace text into icon automaticalcally, Random theme support to show icon of Facebook / Google Plus / Dribbble / LinkedIn / NPMjs / Youtube / Zhihu / Quora.
 
 If you need more, please create [issue](https://github.com/stiekel/hexo-theme-random/issues).
 
