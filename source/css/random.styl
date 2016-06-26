@@ -200,8 +200,21 @@ a:hover {
   margin: 0px;
 
 #menu-list ul li
-  margin-left: 15px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
   display: inline;
+
+#menu-list ul li.active
+  font-weight: 900;
+#menu-list ul li.active a
+  color: #000;
+  
+#menu-list ul li:hover
+  font-weight: 900;
+
+#menu-list ul li a
+  text-decoration: none;
 
 #menu-outer #avatar
   border-radius: 50%;

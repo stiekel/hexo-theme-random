@@ -16,7 +16,14 @@
         <ul>
         {% set menu = config.menu || theme.menu %}
         {% for key in Object.keys(menu) %}
-          <li><a href="{{ url_for(menu[key]) }}">{{ key }}</a></li>
+          {% if is_current(menu[key]) %}
+            <li class="active">
+          {% else %}
+            <li>
+          {% endif %}
+            <a href="{{ url_for(menu[key]) }}">{{ key }}</a>
+            {# <span>{{key}}</span> #}
+          </li>
         {% endfor %}
         </ul>
       </div>

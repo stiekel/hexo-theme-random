@@ -4,11 +4,11 @@ language: en
 
 # main menu navigation
 menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-  Categories: /categories
-  About: /about
+  Home: index.html
+  Archives: archives
+  Tags: tags
+  Categories: categories
+  About: about
   Github: https://github.com/stiekel/hexo-theme-random
 
 social:
