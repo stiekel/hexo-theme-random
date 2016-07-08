@@ -1,5 +1,5 @@
 <!-- JiaThis Button BEGIN -->
-{% if config.jiaThis_uid || theme.jiaTHis_uid %}
+{% if config.jiaThis_uid || theme.jiaThis_uid %}
   <script type="text/javascript">
     var jiathis_config = {{ JSON.stringify(config.jiathisConfig || theme.jiathisConfig) }};
   </script>
