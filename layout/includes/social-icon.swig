@@ -3,7 +3,9 @@
   {% for i in Object.keys( socialConfig ) %}
     <li>
       <a href="{{ socialConfig[i] }}">
-        {% if socialConfig[i] && socialConfig[i]|replace('douban.com', '', 'g')  !== socialConfig[i] %}
+        {% if i && i|lower === 'rss' %}
+          <i class="icon iconfont rss">&#xe60e;</i>
+        {% elif socialConfig[i] && socialConfig[i]|replace('douban.com', '', 'g')  !== socialConfig[i] %}
           <i class="icon iconfont douban">&#xe609;</i>
         {% elif socialConfig[i] && socialConfig[i]|replace('twitter.com', '', 'g')  !== socialConfig[i] %}
           <i class="icon iconfont twitter">&#xe600;</i>

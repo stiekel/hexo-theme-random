@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1466980635'); /* IE9*/
-  src: url('iconfont.eot?t=1466980635#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1466980635') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1466980635') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1466980635#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1468664156'); /* IE9*/
+  src: url('iconfont.eot?t=1468664156#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1468664156') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1468664156') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1468664156#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -19,6 +19,7 @@
 .icon-sociallinkedin:before { content: "\e601"; }
 .icon-weibo:before { content: "\e602"; }
 .icon-google:before { content: "\e603"; }
+.icon-rss:before { content: "\e60e"; }
 .icon-facebook:before { content: "\e604"; }
 .icon-lofter:before { content: "\e60d"; }
 .icon-dribbble:before { content: "\e605"; }

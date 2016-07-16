@@ -112,6 +112,15 @@ It will replace text into icon automaticalcally, Random theme support to show ic
 
 If you need more, please create [issue](https://github.com/stiekel/hexo-theme-random/issues).
 
+## Add RSS Icon
+
+If you want add RSS icon to social links, please add the following code at the `social` section in config file:
+
+```yml
+social:
+  rss: http://chensd.com/feed
+```
+
 ## Third party Service
 
 Random support [Google Analytics](https://www.google.com/analytics/) / [Baidu Tongji](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [Duoshuo](http://duoshuo.com/) / [Uyan](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/), You can config these in theme config file or hexo main config file:

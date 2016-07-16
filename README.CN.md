@@ -115,6 +115,15 @@ social:
 
 如果您喜欢的社交网站不在其中，欢迎提 [issue](https://github.com/stiekel/hexo-theme-random/issues)。
 
+## 添加 RSS 图标
+
+在上面的 `social` 配置项目中，添加一个索引名为 `RSS`，值为订阅地址的项目即可：
+
+```yml
+social:
+  rss: http://chensd.com/feed
+```
+
 ## 第三方服务的配置
 
 本主题支持 [Google Analytics](https://www.google.com/analytics/) / [百度统计](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [多说](http://duoshuo.com/) / [友言](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/)，即可以在主题配置文件中设置，也可以在博客的主配置文件中设置，增加项目如下：
