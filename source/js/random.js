@@ -1,47 +1,13 @@
 $(function(){
   var isMobile = false;
-  // vegas config
-  // add slide image
-  var slides = [];
-  if(backgroundImages && backgroundImages.length > 0) {
-    backgroundImages.forEach(function(img){
-      if(!img) return;
-      slides.push({
-        src: img.replace('__width__', window.screen.availWidth).replace('__height__', window.screen.availHeight)
-      });
-    });
-  }
-  // slides = [];
-  if(slides.length === 0) {
-    var endWith = '';
-    var greyscale = '';
-    if(unsplashConfig) {
-      if(unsplashConfig.gravity) {
-        endWith = '&gravity=' + unsplashConfig.gravity;
-      }
-      if(unsplashConfig.blur) {
-        endWith += '&blur=1';
-      }
-      if(unsplashConfig.greyscale) {
-        greyscale = '/g';
-      }
-    }
 
-    for(var i = 1; i <= 10; i++) {
-      slides.push({
-        src: ['https://unsplash.it', greyscale, '/', window.screen.availWidth, '/',window.screen.availHeight, '?random&t=', i, endWith].join('')
-      });
-    }
+  if(!turnoffBackgroundImage) {
+    playBackground();
+  } else {
+    $('body').css({backgroundColor: backgroundColor ? '#' + backgroundColor : '#446CB3'});
+    $("#btn-view").hide();
   }
-  // check vegas config
-  if('object' !== typeof vegasConfig) {
-    vegasConfig = {
-      shuffle: true
-    };
-  }
-  vegasConfig.slides = slides;
-  $('body').vegas(vegasConfig);
-
+  console.log('turnoffBackgroundImage:', turnoffBackgroundImage)
   // hide / show content button
   $("#btn-view").on('click', showHideToggle);
 
@@ -152,4 +118,49 @@ function TOCToggle() {
     $(".btn-hide-toc-hide").hide();
   }
   isTOCShow = !isTOCShow;
+}
+
+// set and change the background images.
+function playBackground() {
+  // vegas config
+  // add slide image
+  var slides = [];
+  if(backgroundImages && backgroundImages.length > 0) {
+    backgroundImages.forEach(function(img){
+      if(!img) return;
+      slides.push({
+        src: img.replace('__width__', window.screen.availWidth).replace('__height__', window.screen.availHeight)
+      });
+    });
+  }
+  // slides = [];
+  if(slides.length === 0) {
+    var endWith = '';
+    var greyscale = '';
+    if(unsplashConfig) {
+      if(unsplashConfig.gravity) {
+        endWith = '&gravity=' + unsplashConfig.gravity;
+      }
+      if(unsplashConfig.blur) {
+        endWith += '&blur=1';
+      }
+      if(unsplashConfig.greyscale) {
+        greyscale = '/g';
+      }
+    }
+
+    for(var i = 1; i <= 10; i++) {
+      slides.push({
+        src: ['https://unsplash.it', greyscale, '/', window.screen.availWidth, '/',window.screen.availHeight, '?random&t=', i, endWith].join('')
+      });
+    }
+  }
+  // check vegas config
+  if('object' !== typeof vegasConfig) {
+    vegasConfig = {
+      shuffle: true
+    };
+  }
+  vegasConfig.slides = slides;
+  $('body').vegas(vegasConfig);
 }

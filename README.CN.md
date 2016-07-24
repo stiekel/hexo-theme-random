@@ -207,6 +207,21 @@ vegasConfig:
 
 具体参数的意义，请参见 [vegas 文档](http://vegas.jaysalvat.com/documentation/settings/)。
 
+### 关闭背景图轮播
+
+如果你不喜欢背景图和轮播，是可以关闭的，在主配置文件或者主题配置文件中添加如下的值：
+
+```yml
+turnoffBackgroundImage: true
+```
+
+关闭背景图后，可以通过下面的变量来设置背景色，注意，不要包括 # ：
+
+```yml
+backgroundColor: 446CB3
+```
+
+
 ### Hide 按钮
 
 在每个页面的左下角，都有一个 __Hide__ 按钮，点击这个按钮之后，按钮之外的东西都会被隐藏。如果不想显示这个按钮，可以在主题或者 Hexo 的主配置文件中修改 `hideButtonVisibility`，设置为 `false`：

@@ -203,6 +203,20 @@ vegasConfig:
   count: 28
 ```
 
+### Do NOT use background images
+
+If you do NOT like the background iamges, you can turn it off, please add this option in you site config or theme config file:
+
+```yml
+turnoffBackgroundImage: true
+```
+
+and you can set the background color with:
+
+```yml
+backgroundColor: 446CB3
+```
+
 ### Hide button
 
 There is a __Hide__ button on the left bottom of every page, all of the content except button itself will be hide while user click this button. If you want to hide this button, please change `hideButtonVisibility` to `false` in theme config or main config file:

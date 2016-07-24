@@ -52,6 +52,8 @@ var isTriggerAnalytics = !( {{ JSON.stringify(config.isIgnoreSpecialHostVisitor 
 {% endif %}
 var vegasConfig = {{ JSON.stringify(theme.vegasConfig) }};
 var unsplashConfig = {{ JSON.stringify(theme.unsplashConfig) }};
+var turnoffBackgroundImage = {{ JSON.stringify(config.turnoffBackgroundImage || theme.turnoffBackgroundImage )}};
+var backgroundColor = {{ JSON.stringify(config.backgroundColor || theme.backgroundColor )}};
 
 $(".fancybox-thumb").fancybox({
   prevEffect: 'none',
