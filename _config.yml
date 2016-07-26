@@ -72,9 +72,15 @@ ignoreHostList:
   - 127.0.0.1
 
 # if you want to turn off the background images, pleaase set this value as true
-turnoffBackgroundImage: false
+turnoffBackgroundImage: 
+  # home page
+  index: false
+  # arcihve / categories / tags
+  post_list: false
+  # post and page
+  post: true
 # when you turn off backgrounds, you can set a background color.
-backgroundColor: 446CB3
+backgroundColor: D7CCC8
  
 backgroundImages:
 # - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__

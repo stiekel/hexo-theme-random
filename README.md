@@ -208,13 +208,19 @@ vegasConfig:
 If you do NOT like the background iamges, you can turn it off, please add this option in you site config or theme config file:
 
 ```yml
-turnoffBackgroundImage: true
+turnoffBackgroundImage: 
+  # home page
+  index: false
+  # arcihve / categories / tags
+  post_list: false
+  # post and page
+  post: true
 ```
 
 and you can set the background color with:
 
 ```yml
-backgroundColor: 446CB3
+backgroundColor: D7CCC8
 ```
 
 ### Hide button

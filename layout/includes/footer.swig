@@ -52,7 +52,18 @@ var isTriggerAnalytics = !( {{ JSON.stringify(config.isIgnoreSpecialHostVisitor 
 {% endif %}
 var vegasConfig = {{ JSON.stringify(theme.vegasConfig) }};
 var unsplashConfig = {{ JSON.stringify(theme.unsplashConfig) }};
-var turnoffBackgroundImage = {{ JSON.stringify(config.turnoffBackgroundImage || theme.turnoffBackgroundImage )}};
+// is show background images
+var turnoffBackgroundImage = false;
+{% if is_home() && (theme.turnoffBackgroundImage.index || config.turnoffBackgroundImage.index) %}
+  turnoffBackgroundImage = true;
+{% endif %}
+{% if (is_archive() || is_year() || is_month() || is_category() || is_tag()) && (theme.turnoffBackgroundImage.post_list || config.turnoffBackgroundImage.post_list) %}
+  turnoffBackgroundImage = true;
+{% endif %}
+{% if is_post() && (theme.turnoffBackgroundImage.post || config.turnoffBackgroundImage.post) %}
+  turnoffBackgroundImage = true;
+{% endif %}
+
 var backgroundColor = {{ JSON.stringify(config.backgroundColor || theme.backgroundColor )}};
 
 $(".fancybox-thumb").fancybox({

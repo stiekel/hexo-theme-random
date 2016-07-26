@@ -212,13 +212,19 @@ vegasConfig:
 如果你不喜欢背景图和轮播，是可以关闭的，在主配置文件或者主题配置文件中添加如下的值：
 
 ```yml
-turnoffBackgroundImage: true
+turnoffBackgroundImage: 
+  # home page
+  index: false
+  # arcihve / categories / tags
+  post_list: false
+  # post and page
+  post: true
 ```
 
 关闭背景图后，可以通过下面的变量来设置背景色，注意，不要包括 # ：
 
 ```yml
-backgroundColor: 446CB3
+backgroundColor: D7CCC8
 ```
 
 
