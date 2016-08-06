@@ -14,7 +14,9 @@
   <meta name="author" content="Stiekel">
   
   
-  <meta name="description" content="hexo-theme-random 中文文档如果你：
+  
+  
+    <meta name="description" content="hexo-theme-random 中文文档如果你：
 
 喜欢用大图做背景
 不喜欢文章摘要
@@ -27,44 +29,8 @@
 
 主题安装在你的博客目录里，执行如下的命令：
 1git clone https://github.com/stiekel/hexo-theme-random.git themes/random
-然后修改博客的主配置文件，将主题设置为 random：
-1theme: random
-头像设置可以在 Hexo 主配置文件，或者主题的配置文件 theme/random/_config.yml ，增加一个 avatar 配置，如下：
-1avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
-菜单与导航链接的设置显示在首页和导航的链接，可以在主题的配置文件（theme/random/_config.yml）中自定义。如果想链接到标签和分类的列表页，还需要自己手动创建对应页面。
-链接在主题的配置文件中，可以设置首页和导航菜单中的链接，配置如下：
-123456menu:  首页: /  文章: /archives  标签: /tags  分类: /categories  关于: /about
-在首页中，会自动隐藏指向首页的链接。但是，标签和分类的列表页，需要我们手动创建。
-创建分类列表页和标签列表页hexo 默认是没有分类和标签列表页的，本主题已经提供了对这两个页面的支持，但需要手动生成对应的页面。
-要生成标签列表页，在博客主目录中执行如下命令：
-1hexo new page tags
-这样，会生成一个 source/tags/index.md 文件，编辑文件，修改文件的 type 项为 tags，如下：
-1234title: 标签date: 2016-01-16 06:17:29type: "tags"comments: false
-同样，创建分类列表页：
-1hexo new page categories
-编辑 source/categories/index.md 如下：
-1234title: 分类date: 2015-08-03 14:19:29type: "categories"comments: false
-社交网站链接配置在主页和点击头像弹出的个人信息卡片中，显示有社交网站的链接，需要在主题的配置文件 theme/random/_config.yml 中添加对应的配置，如下：
-123456social:  GitHub: https://github.com/stiekel  Coding.NET: https://coding.net/u/Stiekel  Twitter: https://twitter.com/SidCN  Weibo: http://weibo.com/sidcn  DouBan: http://www.douban.com/people/Stiekel/
-在显示的时候，会自动根据社交网站的 url ，来显示对应的图标。除了上述几个，另外还支持 Facebook / Google Plus / Dribbble / LinkedIn / NPMjs 等。
-如果您喜欢的社交网站不在其中，欢迎提 issue。
-主题配置主题安装后，不需要任何配置，也可以很好的显示。
-背景图来源的配置对于轮播的背景图片，有两种来源，一是使用指定的图片，二是使用 unsplash 提供的随机图片。
-如果使用 unsplash 的图片，则可以在主题的配置文件 _config.yml 中进行配置，参数的具体意见，请参见 unsplash文档：
-12345unsplashConfig:  # 关于这几个配置项的说明，请参见 https://unsplash.it/  # blur: true # 给图片增加模糊特效  gravity: 'north' # north, east, south, west, center # 图片翻转  # greyscale: true # 使用灰度图片
-当然，也可以自己配置背景图片，也是在主题配置文件中进行，如下：
-123456backgroundImages:- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
-URL 中的 __width__ 和 __height__ ，在请求时，会替换为浏览器的宽度和高度值，如果你的图片服务器支持按分辨率裁剪，那就可以用得上。
-背景图轮播的配置背景图轮播，使用的是 vegas ，也是在主题的配置文件中进行自定义：
-12345678910111213141516vegasConfig:  # animation: 'random'  preload­Image: true # 图片预加载配置  transition: # 图片的切换物资    - slideLeft2    - slideRight2    # - zoomIn    # - swirLeft    # - swirRight    # - flash    - flash2  # transition: 'swirlRight' # 可以只配置一个  timer: true # 是否显示时间进度条  delay: 5000 # 每张图片的显示时间  shuffle: true # 按顺序播放，还是随机播放  count: 10 #一共多少张图片
-具体参数的意义，请参见 vegas 文档。
-感谢
-背景轮插插件： vegas
-社交网站链接图标： iconfont
-Hexo 主题生成器： generator-hexo-theme
-
-反馈欢迎使用，如果有问题，请您在 issue 中提出来。
-">
+然后修改博客的主配置文件，将主题设置为 ra...">
+  
   <title>Hexo Theme Random 中文文档 [ Random demo site ]</title>
   
   
@@ -76,6 +42,8 @@ Hexo 主题生成器： generator-hexo-theme
 <link rel="stylesheet" href="/css/highlight-railscasts.css">
 <link rel="stylesheet" href="/css/jquery.fancybox.css">
 <link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
   
 </head>
 
@@ -93,7 +61,8 @@ Hexo 主题生成器： generator-hexo-theme
     </div>
   
 </div>
-<div id="container" class="hide-area">
+<div id="outer-container" class="hide-area">
+<div id="container">
   <div id="menu-outer" class="slide-down">
     <div id="menu-inner">
       <div id="brand">
@@ -106,17 +75,48 @@ Hexo 主题生成器： generator-hexo-theme
       <div id="menu-list">
         <ul>
         
-          <li><a href="/">Home</a></li>
         
-          <li><a href="/archives">Archives</a></li>
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
         
-          <li><a href="/tags">Tags</a></li>
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
         
-          <li><a href="/categories">Categories</a></li>
+          
+            <li>
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
         
-          <li><a href="/about">About</a></li>
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
         
-          <li><a href="https://github.com/stiekel/hexo-theme-random">Github</a></li>
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="https://github.com/stiekel/hexo-theme-random">Github</a>
+            
+          </li>
         
         </ul>
       </div>
@@ -137,6 +137,7 @@ Hexo 主题生成器： generator-hexo-theme
       
         <span id = "post-title-updated">Updated at 2016-05-18</span>
       
+      
       <span id = "post-title-categories">Category
       
       
@@ -151,6 +152,8 @@ Hexo 主题生成器： generator-hexo-theme
         <a href="/categories/Readme/文档/">文档</a>
       
       </span>
+      
+      
       <span id = "post-title-tags">
       Tag
       
@@ -166,7 +169,9 @@ Hexo 主题生成器： generator-hexo-theme
         <a href="/tags/文档/">文档</a>
       
       </span>
+      
     </p>
+    
     <h1 id="hexo-theme-random-中文文档"><a href="#hexo-theme-random-中文文档" class="headerlink" title="hexo-theme-random 中文文档"></a>hexo-theme-random 中文文档</h1><p>如果你：</p>
 <ul>
 <li>喜欢用大图做背景</li>
@@ -219,6 +224,14 @@ Hexo 主题生成器： generator-hexo-theme
 <h2 id="反馈"><a href="#反馈" class="headerlink" title="反馈"></a>反馈</h2><p>欢迎使用，如果有问题，请您在 <a href="https://github.com/stiekel/hexo-theme-random/issues" target="_blank" rel="external">issue</a> 中提出来。</p>
 
   </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <div class="random-toc">
+    <h2>Table of Content</h2>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-theme-random-中文文档"><span class="toc-text">hexo-theme-random 中文文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#屏幕截图"><span class="toc-text">屏幕截图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题安装"><span class="toc-text">主题安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#头像设置"><span class="toc-text">头像设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#菜单与导航链接的设置"><span class="toc-text">菜单与导航链接的设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#链接"><span class="toc-text">链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建分类列表页和标签列表页"><span class="toc-text">创建分类列表页和标签列表页</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#社交网站链接配置"><span class="toc-text">社交网站链接配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题配置"><span class="toc-text">主题配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#背景图来源的配置"><span class="toc-text">背景图来源的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#背景图轮播的配置"><span class="toc-text">背景图轮播的配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#感谢"><span class="toc-text">感谢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#反馈"><span class="toc-text">反馈</span></a></li></ol></li></ol>
+  </div>
+</div>
 
   
 <nav id="pagination">
@@ -230,6 +243,10 @@ Hexo 主题生成器： generator-hexo-theme
     <a href="/2016/05/18/Hexo-Theme-Random-User-Guide/" class="next">Next post Hexo Theme Random User Guide &rarr;</a>
   
 </nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
 
 
       
@@ -246,7 +263,7 @@ Hexo 主题生成器： generator-hexo-theme
       
     </div>
   </div>
-  </div>
+</div>
 
 </div>
 
@@ -303,7 +320,22 @@ Hexo 主题生成器： generator-hexo-theme
   </div>
 </div>
 
+
 <div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
 
 
 
@@ -322,15 +354,19 @@ Hexo 主题生成器： generator-hexo-theme
   
     <script src="/js/jquery.fancybox.pack.js"></script>
   
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
 
+<script>
 
-  <script>
   // fancybox
   var backgroundImages = [];
   
   $('#post').each(function(i){
     $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
       var alt = this.alt || this.title;
       if (alt) $(this).after('<span class="caption">' + alt + '</span>');
       $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
@@ -338,15 +374,58 @@ Hexo 主题生成器： generator-hexo-theme
     $(this).find('.fancybox').each(function(){
       $(this).attr('rel', 'post' + i);
     });
-
   });
-  var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
-  var unsplashConfig = {"gravity":"north"};
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-  </script>
+  $(".fancybox").fancybox();
 
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+  turnoffBackgroundImage = true;
+
+
+var backgroundColor = "D7CCC8";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
 </body>
 </html>
 

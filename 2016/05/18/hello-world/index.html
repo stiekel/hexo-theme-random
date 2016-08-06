@@ -14,16 +14,11 @@
   <meta name="author" content="Stiekel">
   
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More info: Server
-Generate static files1$ hexo generate
-More info: Generating
-Deploy to remote sites1$ hexo deploy
-More info: Deployment
-">
+  
+  
+    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Qu...">
+  
   <title>Hello World [ Random demo site ]</title>
   
   
@@ -35,6 +30,8 @@ More info: Deployment
 <link rel="stylesheet" href="/css/highlight-railscasts.css">
 <link rel="stylesheet" href="/css/jquery.fancybox.css">
 <link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
   
 </head>
 
@@ -52,7 +49,8 @@ More info: Deployment
   
   
 </div>
-<div id="container" class="hide-area">
+<div id="outer-container" class="hide-area">
+<div id="container">
   <div id="menu-outer" class="slide-down">
     <div id="menu-inner">
       <div id="brand">
@@ -65,17 +63,48 @@ More info: Deployment
       <div id="menu-list">
         <ul>
         
-          <li><a href="/">Home</a></li>
         
-          <li><a href="/archives">Archives</a></li>
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
         
-          <li><a href="/tags">Tags</a></li>
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
         
-          <li><a href="/categories">Categories</a></li>
+          
+            <li>
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
         
-          <li><a href="/about">About</a></li>
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
         
-          <li><a href="https://github.com/stiekel/hexo-theme-random">Github</a></li>
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="https://github.com/stiekel/hexo-theme-random">Github</a>
+            
+          </li>
         
         </ul>
       </div>
@@ -96,16 +125,10 @@ More info: Deployment
       
         <span id = "post-title-updated">Updated at 2016-05-18</span>
       
-      <span id = "post-title-categories">Category
       
       
-      </span>
-      <span id = "post-title-tags">
-      Tag
-      
-      
-      </span>
     </p>
+    
     <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -117,6 +140,14 @@ More info: Deployment
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
   </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <div class="random-toc">
+    <h2>Table of Content</h2>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  </div>
+</div>
 
   
 <nav id="pagination">
@@ -128,6 +159,10 @@ More info: Deployment
 
   
 </nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
 
 
       
@@ -144,7 +179,7 @@ More info: Deployment
       
     </div>
   </div>
-  </div>
+</div>
 
 </div>
 
@@ -201,7 +236,22 @@ More info: Deployment
   </div>
 </div>
 
+
 <div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
 
 
 
@@ -220,15 +270,19 @@ More info: Deployment
   
     <script src="/js/jquery.fancybox.pack.js"></script>
   
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
 
+<script>
 
-  <script>
   // fancybox
   var backgroundImages = [];
   
   $('#post').each(function(i){
     $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
       var alt = this.alt || this.title;
       if (alt) $(this).after('<span class="caption">' + alt + '</span>');
       $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
@@ -236,15 +290,58 @@ More info: Deployment
     $(this).find('.fancybox').each(function(){
       $(this).attr('rel', 'post' + i);
     });
-
   });
-  var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
-  var unsplashConfig = {"gravity":"north"};
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-  </script>
+  $(".fancybox").fancybox();
 
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+  turnoffBackgroundImage = true;
+
+
+var backgroundColor = "D7CCC8";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
 </body>
 </html>
 

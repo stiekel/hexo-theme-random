@@ -16,7 +16,10 @@
   <meta name="author" content="Stiekel">
   
   
-  <meta name="description" content="A hexo theme with random fullscreen background image.">
+  
+  
+    <meta name="description" content="A hexo theme with random fullscreen background image.">
+  
   <title>Tag: Random [ Random demo site ]</title>
   
   
@@ -28,6 +31,8 @@
 <link rel="stylesheet" href="/css/highlight-railscasts.css">
 <link rel="stylesheet" href="/css/jquery.fancybox.css">
 <link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
   
 </head>
 
@@ -36,7 +41,8 @@
   
   
 </div>
-<div id="container" class="hide-area">
+<div id="outer-container" class="hide-area">
+<div id="container">
   <div id="menu-outer" class="slide-down">
     <div id="menu-inner">
       <div id="brand">
@@ -49,17 +55,48 @@
       <div id="menu-list">
         <ul>
         
-          <li><a href="/">Home</a></li>
         
-          <li><a href="/archives">Archives</a></li>
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
         
-          <li><a href="/tags">Tags</a></li>
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
         
-          <li><a href="/categories">Categories</a></li>
+          
+            <li class="active">
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
         
-          <li><a href="/about">About</a></li>
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
         
-          <li><a href="https://github.com/stiekel/hexo-theme-random">Github</a></li>
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="https://github.com/stiekel/hexo-theme-random">Github</a>
+            
+          </li>
         
         </ul>
       </div>
@@ -86,7 +123,12 @@
       
       
       <div class="post-title-item">
-  <a href="/2016/05/18/Hexo-Theme-Random-User-Guide-CN/">Hexo Theme Random 中文文档</a>
+  
+  <a href="/2016/05/18/Hexo-Theme-Random-User-Guide-CN/">
+  
+    Hexo Theme Random 中文文档
+  
+  </a>
   <p class="page-title-sub">
     <span id = "post-title-date">5-18</span>
     
@@ -122,6 +164,11 @@
     
     </span>
     
+    
+      <br>
+      
+      
+    
   </p>
   
 </div>
@@ -137,7 +184,12 @@
       
       
       <div class="post-title-item">
-  <a href="/2016/05/18/Hexo-Theme-Random-User-Guide/">Hexo Theme Random User Guide</a>
+  
+  <a href="/2016/05/18/Hexo-Theme-Random-User-Guide/">
+  
+    Hexo Theme Random User Guide
+  
+  </a>
   <p class="page-title-sub">
     <span id = "post-title-date">5-18</span>
     
@@ -157,6 +209,11 @@
       <a href="/tags/Documentation/">Documentation</a>
     
     </span>
+    
+    
+      <br>
+      
+      
     
   </p>
   
@@ -185,7 +242,7 @@
       
     </div>
   </div>
-  </div>
+</div>
 
 </div>
 
@@ -242,7 +299,22 @@
   </div>
 </div>
 
+
 <div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
 
 
 
@@ -261,15 +333,19 @@
   
     <script src="/js/jquery.fancybox.pack.js"></script>
   
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
 
+<script>
 
-  <script>
   // fancybox
   var backgroundImages = [];
   
   $('#post').each(function(i){
     $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
       var alt = this.alt || this.title;
       if (alt) $(this).after('<span class="caption">' + alt + '</span>');
       $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
@@ -277,15 +353,56 @@
     $(this).find('.fancybox').each(function(){
       $(this).attr('rel', 'post' + i);
     });
-
   });
-  var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
-  var unsplashConfig = {"gravity":"north"};
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-  </script>
+  $(".fancybox").fancybox();
 
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+
+var backgroundColor = "D7CCC8";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
 </body>
 </html>
 

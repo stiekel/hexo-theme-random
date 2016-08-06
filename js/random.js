@@ -1,46 +1,13 @@
 $(function(){
   var isMobile = false;
-  // vegas config
-  // add slide image
-  var slides = [];
-  if(backgroundImages && backgroundImages.length > 0) {
-    backgroundImages.forEach(function(img){
-      slides.push({
-        src: img.replace('__width__', window.screen.availWidth).replace('__height__', window.screen.availHeight)
-      });
-    });
-  }
-  // slides = [];
-  if(slides.length === 0) {
-    var endWith = '';
-    var greyscale = '';
-    if(unsplashConfig) {
-      if(unsplashConfig.gravity) {
-        endWith = '&gravity=' + unsplashConfig.gravity;
-      }
-      if(unsplashConfig.blur) {
-        endWith += '&blur=1';
-      }
-      if(unsplashConfig.greyscale) {
-        greyscale = '/g';
-      }
-    }
 
-    for(var i = 1; i <= 10; i++) {
-      slides.push({
-        src: ['https://unsplash.it', greyscale, '/', window.screen.availWidth, '/',window.screen.availHeight, '?random&t=', i, endWith].join('')
-      });
-    }
+  if(!turnoffBackgroundImage) {
+    playBackground();
+  } else {
+    $('body').css({backgroundColor: backgroundColor ? '#' + backgroundColor : '#446CB3'});
+    $("#btn-view").hide();
   }
-  // check vegas config
-  if('object' !== typeof vegasConfig) {
-    vegasConfig = {
-      shuffle: true
-    };
-  }
-  vegasConfig.slides = slides;
-  $('body').vegas(vegasConfig);
-
+  console.log('turnoffBackgroundImage:', turnoffBackgroundImage)
   // hide / show content button
   $("#btn-view").on('click', showHideToggle);
 
@@ -98,6 +65,13 @@ $(function(){
 
     lastScrollTop = currentST;
   }
+  // toc control
+  TOCToggle();
+  // if table of content is empty, hide the hole div
+  if($(".random-toc ol").children().length <= 3) {
+
+    $(".random-toc-area").hide();
+  }
 });
 
 var hideAll = false;
@@ -105,9 +79,12 @@ function showHideToggle() {
   if(hideAll) {
     $(".hide-area").show();
     $("#btn-view").html('Hide');
+    $(".jiathis_style").css({'display': 'block'});
   } else {
+    $(".jiathis_style").css({'display': 'none'});
     $(".hide-area").hide();
     $("#btn-view").html('Show');
+    $("#menu-outer").removeClass('slide-up').addClass('slide-down');
   }
   hideAll = !hideAll;
 }
@@ -127,4 +104,63 @@ function openUserCard() {
     closeBtn: false,
     afterClose: showHideToggle
   });
+}
+
+var isTOCShow = true;
+function TOCToggle() {
+  if(isTOCShow) {
+    $(".random-toc").show();
+    $(".btn-hide-toc-show").hide();
+    $(".btn-hide-toc-hide").show();
+  } else {
+    $(".random-toc").hide();
+    $(".btn-hide-toc-show").show();
+    $(".btn-hide-toc-hide").hide();
+  }
+  isTOCShow = !isTOCShow;
+}
+
+// set and change the background images.
+function playBackground() {
+  // vegas config
+  // add slide image
+  var slides = [];
+  if(backgroundImages && backgroundImages.length > 0) {
+    backgroundImages.forEach(function(img){
+      if(!img) return;
+      slides.push({
+        src: img.replace('__width__', window.screen.availWidth).replace('__height__', window.screen.availHeight)
+      });
+    });
+  }
+  // slides = [];
+  if(slides.length === 0) {
+    var endWith = '';
+    var greyscale = '';
+    if(unsplashConfig) {
+      if(unsplashConfig.gravity) {
+        endWith = '&gravity=' + unsplashConfig.gravity;
+      }
+      if(unsplashConfig.blur) {
+        endWith += '&blur=1';
+      }
+      if(unsplashConfig.greyscale) {
+        greyscale = '/g';
+      }
+    }
+
+    for(var i = 1; i <= 10; i++) {
+      slides.push({
+        src: ['https://unsplash.it', greyscale, '/', window.screen.availWidth, '/',window.screen.availHeight, '?random&t=', i, endWith].join('')
+      });
+    }
+  }
+  // check vegas config
+  if('object' !== typeof vegasConfig) {
+    vegasConfig = {
+      shuffle: true
+    };
+  }
+  vegasConfig.slides = slides;
+  $('body').vegas(vegasConfig);
 }

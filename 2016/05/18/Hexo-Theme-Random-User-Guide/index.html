@@ -14,52 +14,15 @@
   <meta name="author" content="Stiekel">
   
   
-  <meta name="description" content="hexo-theme-randomA hexo theme with random fullscreen background image.
+  
+  
+    <meta name="description" content="hexo-theme-randomA hexo theme with random fullscreen background image.
 中文文档If you
 
 prefer to use big picture as background image
 do NOT like show article except in post list
-do NOT like use paginations in post list
-
-This theme seems to suit you.
-Installexecute this command in blog root path:
-1git clone https://github.com/stiekel/hexo-theme-random.git themes/random
-modify the theme setting in hexo main config file _config.yml as following:
-1theme: random
-AvatarYou can config the avatar in hexo main config file or theme config file as following:
-1avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
-Nav links configNav links in homepage and the top of other pages, you can config it in theme config file theme/random/_config.yml:
-123456menu:  Home: /  Archives: /archives  Tags: /tags  Categories: /categories  About: /about
-In index page, the Home link will hide itself.
-Create tags list page and categories list pageHexo do NOT create tags list page and categories list page in default, but Random theme provide those pages, you just need to create it.
-If you want to create tags list page, run this command in blog root path:
-1hexo new page tags
-this will create a folder and a markdown file source/tags/index.md, change the type value of thie file as following:
-1234title: Tagsdate: 2016-01-16 06:17:29type: "tags"comments: false
-the same to create categories list page:
-1hexo new page categories
-and modify the source/categories/index.md as following:
-1234title: Categoriesdate: 2015-08-03 14:19:29type: "categories"comments: false
-Social links configIn the homepage, and the user card when visitors click the avatar, there are some social site icon links, You can config the icons in theme config file theme/random/_config.yml as following:
-123456social:  GitHub: https://github.com/stiekel  Coding.NET: https://coding.net/u/Stiekel  Twitter: https://twitter.com/SidCN  Weibo: http://weibo.com/sidcn  DouBan: http://www.douban.com/people/Stiekel/
-It will replace text into icon automaticalcally, Random theme support to show icon of Facebook / Google Plus / Dribbble / LinkedIn / NPMjs.
-If you need more, please create issue.
-Theme configThe following settings is not prerequisite.
-Background image source configThe background image use unsplash as default, but you can use your custom pictures.
-If you use unsplash images, you can config the settings in theme config file theme/random/_config.yml: 
-12345unsplashConfig:  # more about config on https://unsplash.it/  # blur: true  gravity: 'north' # north, east, south, west, center  # greyscale: true
-if you want use your own pictures, change the following section:
-123456backgroundImages:- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
-__width__ and __height__ in URLs will replace with browser window size when show the picture, It’s very useful when you image server support cut image into appointed size.
-Vegas(background image player) configRandom theme use Vegas to organize pictures, you can config it in following section of theme config file:
-1234567891011121314151617vegasConfig:  # more about config http://vegas.jaysalvat.com/documentation/settings/  # animation: 'random'  # transition: 'swirlRight'  preload­Image: true  transition:    - slideLeft2    - slideRight2    # - zoomIn    # - swirLeft    # - swirRight    # - flash    - flash2  timer: true  delay: 5000  shuffle: true  count: 28
-Thanks
-Vegas
-iconfont
-generator-hexo-theme
-
-Feedbackissue.
-">
+do NOT like use paginat...">
+  
   <title>Hexo Theme Random User Guide [ Random demo site ]</title>
   
   
@@ -71,6 +34,8 @@ Feedbackissue.
 <link rel="stylesheet" href="/css/highlight-railscasts.css">
 <link rel="stylesheet" href="/css/jquery.fancybox.css">
 <link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
   
 </head>
 
@@ -97,7 +62,8 @@ Feedbackissue.
     </div>
   
 </div>
-<div id="container" class="hide-area">
+<div id="outer-container" class="hide-area">
+<div id="container">
   <div id="menu-outer" class="slide-down">
     <div id="menu-inner">
       <div id="brand">
@@ -110,17 +76,48 @@ Feedbackissue.
       <div id="menu-list">
         <ul>
         
-          <li><a href="/">Home</a></li>
         
-          <li><a href="/archives">Archives</a></li>
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
         
-          <li><a href="/tags">Tags</a></li>
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
         
-          <li><a href="/categories">Categories</a></li>
+          
+            <li>
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
         
-          <li><a href="/about">About</a></li>
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
         
-          <li><a href="https://github.com/stiekel/hexo-theme-random">Github</a></li>
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="https://github.com/stiekel/hexo-theme-random">Github</a>
+            
+          </li>
         
         </ul>
       </div>
@@ -141,10 +138,8 @@ Feedbackissue.
       
         <span id = "post-title-updated">Updated at 2016-05-18</span>
       
-      <span id = "post-title-categories">Category
       
       
-      </span>
       <span id = "post-title-tags">
       Tag
       
@@ -160,7 +155,9 @@ Feedbackissue.
         <a href="/tags/Documentation/">Documentation</a>
       
       </span>
+      
     </p>
+    
     <h1 id="hexo-theme-random"><a href="#hexo-theme-random" class="headerlink" title="hexo-theme-random"></a>hexo-theme-random</h1><p>A hexo theme with random fullscreen background image.</p>
 <h2 id="中文文档"><a href="#中文文档" class="headerlink" title="中文文档"></a><a href="README.CN.md">中文文档</a></h2><p>If you</p>
 <ul>
@@ -208,6 +205,14 @@ Feedbackissue.
 <h2 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h2><p><a href="https://github.com/stiekel/hexo-theme-random/issues" target="_blank" rel="external">issue</a>.</p>
 
   </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <div class="random-toc">
+    <h2>Table of Content</h2>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-theme-random"><span class="toc-text">hexo-theme-random</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#中文文档"><span class="toc-text">中文文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install"><span class="toc-text">Install</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Avatar"><span class="toc-text">Avatar</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nav-links-config"><span class="toc-text">Nav links config</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Create-tags-list-page-and-categories-list-page"><span class="toc-text">Create tags list page and categories list page</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Social-links-config"><span class="toc-text">Social links config</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Theme-config"><span class="toc-text">Theme config</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Background-image-source-config"><span class="toc-text">Background image source config</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vegas-background-image-player-config"><span class="toc-text">Vegas(background image player) config</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thanks"><span class="toc-text">Thanks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Feedback"><span class="toc-text">Feedback</span></a></li></ol></li></ol>
+  </div>
+</div>
 
   
 <nav id="pagination">
@@ -221,6 +226,10 @@ Feedbackissue.
     <a href="/2016/05/18/hello-world/" class="next">Next post Hello World &rarr;</a>
   
 </nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
 
 
       
@@ -237,7 +246,7 @@ Feedbackissue.
       
     </div>
   </div>
-  </div>
+</div>
 
 </div>
 
@@ -294,7 +303,22 @@ Feedbackissue.
   </div>
 </div>
 
+
 <div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
 
 
 
@@ -313,15 +337,19 @@ Feedbackissue.
   
     <script src="/js/jquery.fancybox.pack.js"></script>
   
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
 
+<script>
 
-  <script>
   // fancybox
   var backgroundImages = [];
   
   $('#post').each(function(i){
     $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
       var alt = this.alt || this.title;
       if (alt) $(this).after('<span class="caption">' + alt + '</span>');
       $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
@@ -329,15 +357,58 @@ Feedbackissue.
     $(this).find('.fancybox').each(function(){
       $(this).attr('rel', 'post' + i);
     });
-
   });
-  var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
-  var unsplashConfig = {"gravity":"north"};
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-  </script>
+  $(".fancybox").fancybox();
 
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+  turnoffBackgroundImage = true;
+
+
+var backgroundColor = "D7CCC8";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
 </body>
 </html>
 
