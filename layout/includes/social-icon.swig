@@ -33,6 +33,10 @@
           <i class="icon iconfont lofter">&#xe60d;</i>
         {% elif socialConfig[i] && socialConfig[i]|replace('quora.com', '', 'g')  !== socialConfig[i] %}
           <i class="icon iconfont quora">&#xe60c;</i>
+        {% elif socialConfig[i] && socialConfig[i]|replace('instagram.com', '', 'g')  !== socialConfig[i] %}
+          <i class="icon iconfont instagram">&#xe60f;</i>
+        {% elif socialConfig[i] && socialConfig[i]|replace('jianshu.com', '', 'g')  !== socialConfig[i] %}
+          <i class="icon iconfont jian">&#xe610;</i>
         {% else %}
           {{i}}
         {% endif %}

@@ -7,7 +7,6 @@ $(function(){
     $('body').css({backgroundColor: backgroundColor ? '#' + backgroundColor : '#446CB3'});
     $("#btn-view").hide();
   }
-  console.log('turnoffBackgroundImage:', turnoffBackgroundImage)
   // hide / show content button
   $("#btn-view").on('click', showHideToggle);
 
