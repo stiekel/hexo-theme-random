@@ -6,7 +6,7 @@
         {% if i && i|lower === 'rss' %}
           <i class="icon iconfont rss">&#xe60e;</i>
         {% elif socialConfig[i] && socialConfig[i]|replace('douban.com', '', 'g')  !== socialConfig[i] %}
-          <i class="icon iconfont douban">&#xe609;</i>
+          <i class="icon iconfont douban">&#xe60f;</i>
         {% elif socialConfig[i] && socialConfig[i]|replace('twitter.com', '', 'g')  !== socialConfig[i] %}
           <i class="icon iconfont twitter">&#xe600;</i>
         {% elif socialConfig[i] && socialConfig[i]|replace('linkedin.com', '', 'g')  !== socialConfig[i] %}
@@ -34,9 +34,13 @@
         {% elif socialConfig[i] && socialConfig[i]|replace('quora.com', '', 'g')  !== socialConfig[i] %}
           <i class="icon iconfont quora">&#xe60c;</i>
         {% elif socialConfig[i] && socialConfig[i]|replace('instagram.com', '', 'g')  !== socialConfig[i] %}
-          <i class="icon iconfont instagram">&#xe60f;</i>
+          <i class="icon iconfont instagram">&#xe613;</i>
+        {% elif socialConfig[i] && socialConfig[i]|replace('segmentfault.com', '', 'g')  !== socialConfig[i] %}
+          <i class="icon iconfont segmentfault">&#xe611;</i>
+        {% elif socialConfig[i] && socialConfig[i]|replace('stackoverflow.com', '', 'g')  !== socialConfig[i] %}
+          <i class="icon iconfont stackoverflow">&#xe612;</i>
         {% elif socialConfig[i] && socialConfig[i]|replace('jianshu.com', '', 'g')  !== socialConfig[i] %}
-          <i class="icon iconfont jian">&#xe610;</i>
+          <i class="icon iconfont jian">&#xe614;</i>
         {% else %}
           {{i}}
         {% endif %}
