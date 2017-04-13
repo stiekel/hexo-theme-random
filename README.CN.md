@@ -15,13 +15,13 @@
 
 ## 屏幕截图
 
-![hexo theme random index screenshot cn](http://two.yt/images/2016/05/16/nDj.png)
+![hexo theme random index screenshot cn](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-homepage.png)
 
-![hexo theme random archives screenshot cn](http://two.yt/images/2016/05/16/mny.png)
+![hexo theme random archives screenshot cn](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-archive.png)
 
-![hexo theme random category detail screenshot cn](http://two.yt/images/2016/05/16/3R4.png)
+![hexo theme random category detail screenshot cn](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-detail.png)
 
-![hexo theme random user card screenshot cn](http://two.yt/images/2016/05/16/oDm.png)
+![hexo theme random user card screenshot cn](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-user-card.png)
 
 ## 主题安装
 

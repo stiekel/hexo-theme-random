@@ -18,10 +18,10 @@ This theme seems to suit you.
 
 ## Screenshot
 
-![hexo theme random index screenshot en](http://two.yt/images/2016/05/18/NPJ.png)
-![hexo theme random archives screenshot en](http://two.yt/images/2016/05/18/kgQ.png)
-![hexo theme random category detail screenshot en](http://two.yt/images/2016/05/18/pOw.png)
-![hexo theme random user card screenshot en](http://two.yt/images/2016/05/18/8BW.png)
+![hexo theme random index screenshot en](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-homepage.png)
+![hexo theme random archives screenshot en](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-archive.png)
+![hexo theme random category detail screenshot en](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-detail.png)
+![hexo theme random user card screenshot en](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-user-card.png)
 
 
 ## Install
