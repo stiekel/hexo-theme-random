@@ -18,14 +18,14 @@ This theme seems to suit you.
 
 ## Screenshot
 
-![hexo theme random screenshot detail ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-detail_c.png)
-![hexo theme random screenshot code style ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-code-style_c.png)
+![hexo theme random screenshot homepage ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-homepage_c.png)
 ![hexo theme random screenshot archive ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-archive_c.png)
+![hexo theme random screenshot detail ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-detail_c.png)
 ![hexo theme random screenshot user card ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-user-card_c.png)
+![hexo theme random screenshot categories ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-categories_c.png)
 ![hexo theme random screenshot tags cloud ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-tags-cloud_c.png)
 ![hexo theme random screenshot tag list ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-tag-list_c.png)
-![hexo theme random screenshot categories ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-categories_c.png)
-![hexo theme random screenshot homepage ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-homepage_c.png)
+![hexo theme random screenshot code style ](http://7te9fe.com1.z0.glb.clouddn.com/hexo-random-demo-code-style_c.png)
 
 ## Install
 
