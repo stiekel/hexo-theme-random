@@ -37,9 +37,6 @@
     <div id="content-inner">
       {# {% autoescape false %}{{ body }}{% endautoescape %} #}
       {% block body %}{% endblock %}
-      {% if page.comments && (theme.duoshuo_shortname || config.duoshuo_shortname) %}
-      <div class="ds-thread" data-thread-key="{{ page.path }}" data-title="{{ page.title }}" data-url="{{ page.permalink }}"></div>
-      {% endif %}
       {% if page.comments && (config.uyan_id || theme.uyan_id) %}
       <div id="uyan_frame"></div>
       {% endif %}
@@ -68,9 +65,6 @@
 </div>
 
 </div>
-{% if page.comments && (theme.duoshuo_shortname || config.duoshuo_shortname) %}
-  {% include 'duoshuo.swig' %}
-{% endif %}
 {% if page.comments && (config.disqus_shortname || theme.disqus_shortname) %}
   {% include 'disqus.swig' %}
 {% endif %}
