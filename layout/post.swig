@@ -1,6 +1,7 @@
 {% extends 'includes/layout.swig' %}
 
 {% block body %}
+  {% include 'math/index.swig' %}
   <article id="post">
     <h1>{{ page.title || __('without_title') }}</h1>
     <p class="page-title-sub">

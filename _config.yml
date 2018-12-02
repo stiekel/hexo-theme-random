@@ -1,6 +1,6 @@
 
 # html lang
-language: en
+language: zh-CN
 
 # main menu navigation
 menu:
@@ -9,19 +9,17 @@ menu:
   Tags: tags
   Categories: categories
   About: about
-  Github: https://github.com/stiekel/hexo-theme-random
+  Github: https://github.com/Baileyswu
 
 social:
-  GitHub: https://github.com/stiekel/hexo-theme-random
-  Coding.NET: https://coding.net/u/Stiekel
-  Twitter: https://twitter.com/SidCN
-  Weibo: http://weibo.com/sidcn
-  DouBan: http://www.douban.com/people/Stiekel/
+  GitHub: https://github.com/Baileyswu
+  Weibo: http://weibo.com/Danliwoo
+  M: mailto:wulidan0530@live.com
 
 # Google analytics
-google_analytics:
+google_analytics: false
 # Baidu tongji
-baidu_analytics:
+baidu_analytics: false
 # Disqus
 disqus_shortname:
 # Uyan
@@ -40,7 +38,7 @@ jiathisConfig:
 
 
 # Miscelaneous
-favicon: /favicon.ico
+favicon: /hollow.ico
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -76,7 +74,7 @@ turnoffBackgroundImage:
   # arcihve / categories / tags
   post_list: false
   # post and page
-  post: true
+  post: false
 # when you turn off backgrounds, you can set a background color.
 backgroundColor: 34495E
  
@@ -93,25 +91,25 @@ vegasConfig:
   # transition: 'swirlRight'
   preload­Image: true
   transition:
-    - slideLeft2
-    - slideRight2
+    # - slideLeft2
+    # - slideRight2
     # - zoomIn
     # - swirLeft
     # - swirRight
-    # - flash
-    - flash2
+    - flash
+    # - flash2
   timer: true
-  delay: 5000
+  delay: 1500000
   shuffle: true
-  count: 28
+  count: 12
 
 unsplashConfig:
   # more about config on https://unsplash.it/
   # blur: true
-  gravity: 'north' # north, east, south, west, center
+  gravity: 'center' # north, east, south, west, center
   # greyscale: true
 
-avatar: http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg
+avatar: https://avatars3.githubusercontent.com/u/13285397?s=460&v=4
 
 # do not like fancybox, set this as false, this will turn it off
 fancybox: true
