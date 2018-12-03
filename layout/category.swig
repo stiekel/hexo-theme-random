@@ -6,7 +6,7 @@
       {% if cat.name === page.category %}
         <h1 class="center-title">
           {{ page_title || __('category_title') }}
-          {# {{ page.category }}
+          {{ page.category }}
           {% if cat.posts.length %}
           <span class="posts-count">
             {{ __('total_title') }}
@@ -19,7 +19,7 @@
           </span>
           {% else %}
             {{ __('not_post') }}
-          {% endif %} #}
+          {% endif %} 
         </h1>
       {% endif %}
     {% endfor %}

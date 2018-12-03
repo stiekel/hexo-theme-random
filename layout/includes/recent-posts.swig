@@ -2,11 +2,11 @@
 {% if site.posts.length > 0 %}
   <div id="recent-posts">
     <h1>{{ __('archive_title') }}
-    {% if page.posts.length %}
+    {% if site.posts.length %}
         <span class="posts-count">
         {{ __('total_title') }}
         {{ site.posts.length }}
-        {% if 1 === page.posts.length %}
+        {% if 1 === site.posts.length %}
             {{ __('post_title') }}
         {% else %}
             {{ __('posts_title') }}
