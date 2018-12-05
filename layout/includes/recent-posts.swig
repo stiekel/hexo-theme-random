@@ -25,7 +25,7 @@
         {% set howMuch[thisYear] = howMuch[thisYear] + 1 %}
     {% endfor %}
     {% set lastYear%}
-    {% for postItem in site.posts.toArray() %}
+    {% for postItem in page.posts.toArray() %}
         {% set thisYear = date(postItem.date, 'YYYY') %}
         {% if thisYear != lastYear %}
             {% set lastYear = thisYear %}
