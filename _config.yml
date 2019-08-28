@@ -9,7 +9,7 @@ menu:
   Tags: tags
   Categories: categories
   About: about
-  Github: https://github.com/Baileyswu
+  Github: https://github.com/Baileyswu/Baileyswu.github.io
 
 social:
   GitHub: https://github.com/Baileyswu
@@ -33,8 +33,18 @@ jiathisConfig:
   showClose: true
   shortUrl: false
   hideMore: false
-
-
+# Valine 评论 https://valine.js.org
+valine:
+  enable: true # 如果你想用Valine评论系统，请设置enable为true
+  appId: 0Fj98eQg9XCdRJPI2p1yxYCN-gzGzoHsz #your leancloud appId
+  appKey: Qsrhj224GhWhBgFDfnfmuRCD #your leancloud appKey
+  guest_info: nick,mail,link #valine comment header info
+  placeholder: Listen to Me # valine comment input placeholder(like: Please leave your footprints )
+  avatar: https://avatars3.githubusercontent.com/u/13285397?s=460&v=4 # gravatar style https://valine.js.org/avatar
+  pageSize: 10 # comment list page size
+  verify: false # valine verify code (true/false)
+  notify: true # valine mail notify (true/false) 
+  lang: zh-cn
 
 # Miscelaneous
 favicon: /hollow.ico

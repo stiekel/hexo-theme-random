@@ -6,9 +6,6 @@
     <h1>{{ page.title || __('without_title') }}</h1>
     <p class="page-title-sub">
       <span id = "post-title-date">{{ __('created_at') }} {{ date(page.date) }}</span>
-      {% if page.date !== page.updated %}
-        <span id = "post-title-updated">{{ __('updated_at') }} {{ date(page.updated) }}</span>
-      {% endif %}
       {% if page.categories.length %}
       <span id = "post-title-categories">{{ __('category_title') }}
       {% set i = 0 %}

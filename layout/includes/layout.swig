@@ -43,6 +43,9 @@
       {% if page.comments && (config.disqus_shortname || theme.disqus_shortname) %}
       <div id="disqus_thread"></div>
       {% endif %}
+      {% if page.comments && (theme.valine.enable) %}
+        {% include 'valine.swig' %}
+      {% endif %}
     </div>
   </div>
 
