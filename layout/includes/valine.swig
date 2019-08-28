@@ -18,6 +18,7 @@
         placeholder: "{{ theme.valine.placeholder }}",
         pageSize:'{{ theme.valine.pageSize }}',
         avatar:'{{ theme.valine.avatar }}',
-        lang:'{{ theme.valine.lang }}'
+        lang:'{{ theme.valine.lang }}',
+        visitor: '{{ theme.valine.visit_analytics }}'
     })
 </script>

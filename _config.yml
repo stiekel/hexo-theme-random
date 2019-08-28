@@ -41,11 +41,12 @@ valine:
   appKey: Qsrhj224GhWhBgFDfnfmuRCD #your leancloud appKey
   guest_info: nick,mail,link #valine comment header info
   placeholder: 我不要你觉得，我要我觉得~ # valine comment input placeholder(like: Please leave your footprints )
-  avatar: https://avatars3.githubusercontent.com/u/13285397?s=460&v=4 # gravatar style https://valine.js.org/avatar
+  avatar: robohash # gravatar style https://valine.js.org/avatar
   pageSize: 10 # comment list page size
   verify: false # valine verify code (true/false)
   notify: true # valine mail notify (true/false) 
   lang: en
+  visit_analytics: true
 
 # Miscelaneous
 favicon: /hollow.ico
