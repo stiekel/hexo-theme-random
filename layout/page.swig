@@ -17,6 +17,9 @@
         {% include 'includes/gallery.swig' %}
       {% endif %}
       {% autoescape false %}{{page.content }}{% endautoescape %}
+      {% if page.comments && (theme.valine.enable) %}
+        {% include 'includes/valine.swig' %}
+      {% endif %}
     {% endif %}
   </article>
 

@@ -38,6 +38,9 @@
     {% autoescape false %}{{ page.content }}{% endautoescape %}
   </article>
   {% include 'includes/toc.swig' %}
+  {% if page.comments && (theme.valine.enable) %}
+    {% include 'includes/valine.swig' %}
+  {% endif %}
   {% include 'includes/pagination.swig' %}
   {% include 'includes/jiathis.swig' %}
 {% endblock %}
