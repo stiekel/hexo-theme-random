@@ -9,12 +9,12 @@ menu:
   Tags: tags
   Categories: categories
   About: about
-  Github: https://github.com/Baileyswu
+  Github: https://github.com/stiekel
 
 social:
-  GitHub: https://github.com/Baileyswu
-  Weibo: http://weibo.com/Danliwoo
-  M: mailto:wulidan0530@live.com
+  GitHub: https://github.com/stiekel
+  Weibo: http://weibo.com/sidcn
+  M: histkc@gmail.com
 
 # Google analytics
 google_analytics: false
@@ -109,7 +109,7 @@ unsplashConfig:
   gravity: 'center' # north, east, south, west, center
   # greyscale: true
 
-avatar: https://avatars3.githubusercontent.com/u/13285397?s=460&v=4
+avatar: https://avatars2.githubusercontent.com/u/2735087?s=60&u=775d4033139cae6b23c593bcf59fa433224ba4e3&v=4
 
 # do not like fancybox, set this as false, this will turn it off
 fancybox: true
