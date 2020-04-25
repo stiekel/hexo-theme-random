@@ -17,7 +17,8 @@
     {% endif %}
     </h1>
     {% set howMuch = {} %}
-    {% for postItem in site.posts.toArray() %}
+    {% set allPosts = site.posts.sort('date', 'desc') %}
+    {% for postItem in allPosts %}
         {% set thisYear = date(postItem.date, 'YYYY') %}
         {% if !howMuch[thisYear] %}
             {% set howMuch[thisYear] = 0 %}
@@ -25,7 +26,7 @@
         {% set howMuch[thisYear] = howMuch[thisYear] + 1 %}
     {% endfor %}
     {% set lastYear%}
-    {% for postItem in site.posts.toArray() %}
+    {% for postItem in allPosts %}
         {% set thisYear = date(postItem.date, 'YYYY') %}
         {% if thisYear != lastYear %}
             {% set lastYear = thisYear %}
