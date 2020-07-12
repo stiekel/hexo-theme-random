@@ -9,8 +9,8 @@ A hexo theme with random fullscreen background image.
 
 If you
 
-* prefer to use big picture as background image
-* do NOT like show article except in post list
+* prefer to use fullscreen picture as background image
+* do NOT like show article abstract in post list
 * do NOT like use paginations in post list
 
 This theme seems to suit you.
