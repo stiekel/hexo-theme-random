@@ -8,7 +8,7 @@
       <div id="brand">
         {# <a href="{{ url_for('/') }}"> #}
         <a onClick="openUserCard()">
-          <img id="avatar" src="{{config.avatar || theme.avatar}}"/>
+          <img id="avatar" src="{{url_for(config.avatar || theme.avatar)}}"/>
           <div id="homelink">{{config.title}}</div>
         </a>
       </div>

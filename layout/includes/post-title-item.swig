@@ -40,8 +40,8 @@
       {% for photo in postItem.photos %}
         {% set i = i + 1 %}
         {% if i <= 3 %}
-          <a class="fancybox-thumb" rel="fancybox-thumb" href="{{photo}}">
-            <img src="{{photo}}" />
+          <a class="fancybox-thumb" rel="fancybox-thumb" href="{{url_for(photo)}}">
+            <img src="{{url_for(photo)}}" />
           </a>
         {% endif %}
       {% endfor %}
