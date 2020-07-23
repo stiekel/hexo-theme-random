@@ -22,18 +22,22 @@
       </span>
       {% endif %}
       {% if page.tags.length %}
-      <span id = "post-title-tags">
-      {{ __('tag_title') }}
-      {% set i = 0 %}
-      {% for tag in page.tags %}
-        {% if i !== 0 %}
-          {{'/'}}
-        {% endif %}
-        {% set i = i + 1 %}
-        <a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
-      {% endfor %}
-      </span>
+        <span id = "post-title-tags">
+          {{ __('tag_title') }}
+          {% set i = 0 %}
+          {% for tag in page.tags %}
+            {% if i !== 0 %}
+              {{'/'}}
+            {% endif %}
+            {% set i = i + 1 %}
+            <a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
+          {% endfor %}
+        </span>
       {% endif %}
+      <span id="/{{ page.path }}" class="leancloud-visitors" data-flag-title="{{ page.title }}">
+        <i class="leancloud-visitors-count"></i>
+        <em class="post-meta-item-text"> views </em>
+      </span>
     </p>
     {% if page.photos.length %}
       {% include 'includes/gallery.swig' %}
@@ -41,6 +45,9 @@
     {% autoescape false %}{{ page.content }}{% endautoescape %}
   </article>
   {% include 'includes/toc.swig' %}
+  {% if page.comments && (theme.valine.enable) %}
+    {% include 'includes/valine.swig' %}
+  {% endif %}
   {% include 'includes/pagination.swig' %}
   {% include 'includes/jiathis.swig' %}
 {% endblock %}

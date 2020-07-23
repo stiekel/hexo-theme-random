@@ -1,0 +1,24 @@
+<div id="valine_container" class="valine_thread"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = '{{ theme.valine.guest_info }}'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = '{{ theme.valine.notify }}' == true;
+    var verify = '{{ theme.valine.verify }}' == true;
+    var valine = new Valine();
+    valine.init({
+        el: '#valine_container',
+        notify: notify,
+        verify: verify,
+        appId: "{{ theme.valine.appId }}",
+        appKey: "{{ theme.valine.appKey }}",
+        placeholder: "{{ theme.valine.placeholder }}",
+        pageSize:'{{ theme.valine.pageSize }}',
+        avatar:'{{ theme.valine.avatar }}',
+        lang:'{{ theme.valine.lang }}',
+        visitor: '{{ theme.valine.visit_analytics }}'
+    })
+</script>
