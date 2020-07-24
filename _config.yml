@@ -38,10 +38,10 @@ jiathisConfig:
 # Valine 评论 https://valine.js.org
 valine:
   enable: true # 如果你想用Valine评论系统，请设置enable为true
-  appId: 0Fj98eQg9XCdRJPI2p1yxYCN-gzGzoHsz #your leancloud appId
-  appKey: Qsrhj224GhWhBgFDfnfmuRCD #your leancloud appKey
+  appId: #your leancloud appId
+  appKey: #your leancloud appKey
   guest_info: nick,mail,link #valine comment header info
-  placeholder: 我不要你觉得，我要我觉得~ # valine comment input placeholder(like: Please leave your footprints )
+  placeholder: # valine comment input placeholder(like: Please leave your footprints )
   avatar: robohash # gravatar style https://valine.js.org/avatar
   pageSize: 10 # comment list page size
   verify: false # valine verify code (true/false)
