@@ -127,7 +127,7 @@ social:
 
 ## 第三方服务的配置
 
-本主题支持 [Google Analytics](https://www.google.com/analytics/) / [百度统计](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [友言](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/)，即可以在主题配置文件中设置，也可以在博客的主配置文件中设置，增加项目如下：
+本主题支持 [Google Analytics](https://www.google.com/analytics/) / [百度统计](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [友言](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/) / [Valine](https://valine.js.org/en/index.html)，即可以在主题配置文件中设置，也可以在博客的主配置文件中设置，增加项目如下：
 
 ```yml
 # Google analytics
@@ -146,6 +146,18 @@ jiathisConfig:
   showClose: true
   shortUrl: false
   hideMore: false
+valine:
+  enable: false # 设置为 true 即可开启
+  appId: #your leancloud appId
+  appKey: #your leancloud appKey
+  guest_info: nick,mail,link #valine comment header info
+  placeholder: # valine comment input placeholder(like: Please leave your footprints )
+  avatar: robohash # gravatar style https://valine.js.org/avatar
+  pageSize: 10 # comment list page size
+  verify: false # valine verify code (true/false)
+  notify: true # valine mail notify (true/false) 
+  lang: en
+  visit_analytics: true
 ```
 
 对应各个服务的 key 或者 code，直接添加在冒号之后即可。

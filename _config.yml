@@ -37,7 +37,7 @@ jiathisConfig:
 
 # Valine 评论 https://valine.js.org
 valine:
-  enable: true # 如果你想用Valine评论系统，请设置enable为true
+  enable: false # set true if you want to use
   appId: #your leancloud appId
   appKey: #your leancloud appKey
   guest_info: nick,mail,link #valine comment header info

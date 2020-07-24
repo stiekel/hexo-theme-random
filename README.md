@@ -125,7 +125,7 @@ social:
 
 ## Third party Service
 
-Random support [Google Analytics](https://www.google.com/analytics/) / [Baidu Tongji](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [Uyan](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/), You can config these in theme config file or hexo main config file:
+Random support [Google Analytics](https://www.google.com/analytics/) / [Baidu Tongji](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [Uyan](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/) / [Valine](https://valine.js.org/en/index.html), You can config these in theme config file or hexo main config file:
 
 ```yml
 # Google analytics
@@ -144,6 +144,18 @@ jiathisConfig:
   showClose: true
   shortUrl: false
   hideMore: false
+valine:
+  enable: false # set true if you want to use
+  appId: #your leancloud appId
+  appKey: #your leancloud appKey
+  guest_info: nick,mail,link #valine comment header info
+  placeholder: # valine comment input placeholder(like: Please leave your footprints )
+  avatar: robohash # gravatar style https://valine.js.org/avatar
+  pageSize: 10 # comment list page size
+  verify: false # valine verify code (true/false)
+  notify: true # valine mail notify (true/false) 
+  lang: en
+  visit_analytics: true
 ```
 
 Just add the key or code after the ':'.
