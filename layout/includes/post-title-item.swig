@@ -8,7 +8,11 @@
   {% endif %}
   </a>
   <p class="page-title-sub">
-    <span id = "post-title-date">{{ date(postItem.date, 'M-D') }}</span>
+    {% if postItem.archive == 'true' %}
+      <span id = "post-title-date">{{ date(postItem.date, 'M-D') }}</span>
+    {% else %}
+      <span id = "post-title-date">{{ date(postItem.date, 'Y-M-D') }}</span>
+    {% endif %}
     {% if postItem.categories.length %}
     <span id = "post-title-categories">{{ __('category_title') }}
     {% set i = 0 %}
