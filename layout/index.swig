@@ -19,6 +19,19 @@
         {% endfor %}
       </ul>
       {% include 'includes/social-icon.swig' %}
+      {% set homepageArticleCount = config.homepageArticleCount || theme.homepageArticleCount %}
+      {% if homepageArticleCount > 0 %}
+      <div class="index-article-container">
+        <div class="index-article-list">
+          {% set allPosts = site.posts.sort('date', 'desc') %}
+          {% for idx, postItem in allPosts %}
+            {% if idx < homepageArticleCount %}
+            {% include 'includes/post-title-item.swig' %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>

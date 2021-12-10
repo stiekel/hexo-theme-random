@@ -16,6 +16,11 @@ body
   margin: 0px;
   font: 400 1em/1.8 'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', STHeiti, 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
   @media (max-width: mdDesktopWidth)
     font-size: 16px;
 article
@@ -58,28 +63,23 @@ a:hover {
 }
 
 .random-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -200px;
-  width: lgDesktopWidth;
-  margin-left: - (lgDesktopWidth / 2);
-  @media (max-width: lgDesktopWidth) {
-    width: mdDesktopWidth;
-    margin-left: - (mdDesktopWidth / 2);
-  }
-  @media (max-width: mdDesktopWidth) {
-    width: desktopWidth;
-    margin-left: - (desktopWidth / 2);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #random-index {
-  margin: 20px;
-  padding-bottom: 20px;
+  margin: 10px;
+  padding: 40px;
   text-align: center;
   border-radius: 10px;
   background-color: #ecf0f1;
+}
+
+#random-index .index-article-container {
+  .index-article-list {
+    text-align: left;
+  }
 }
 
 #random-index a {
@@ -329,7 +329,8 @@ ul.category-list li a:hover
   line-height: 40px;
   display: block;
   position: fixed;
-  top: 90%;
+  bottom: 10%;
+  left: 5%;
   margin-left: 20px;
   height: 40px;
   width: 40px;
@@ -638,16 +639,22 @@ blockquote
     margin-right: 0px;
   // #user-card
     // width: 200px;
+@media (min-width: mobileMaxWidth)
+  #random-index
+    min-width: 520px;
 @media (max-width: mobileMaxWidth)
   .random-center
     position: static;
     left: 0;
     margin-left: 0px;
     width: 100%;
-    margin-top: 30%;
-  #random-index .index-nav-link li
-    display: block;
-    // padding: 0px 0px;
+  #random-index
+    width: 100%;
+    padding: 5px;
+  #random-index .index-nav-link
+    margin: 5px;
+  .social-icon
+    margin: 0px;
   #bottom-outer, #random-index
     opacity: mobileOpacityValue;
   #menu-outer
@@ -661,10 +668,13 @@ blockquote
     margin-left: 0px;
     margin-top: 95px;
     width: 100%;
-  #random-index .index-nav-link li
-    display: block;
-    padding: 0px 0px;
-
+  #random-index
+    width: 100%;
+    padding: 5px;
+  #random-index .index-nav-link
+    li
+      display: block;
+      padding: 0px 0px;
 @media (max-height: 320px)
   .random-center
     margin-top: 75px;

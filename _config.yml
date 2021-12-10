@@ -16,6 +16,9 @@ social:
   Weibo: http://weibo.com/sidcn
   M: histkc@gmail.com
 
+# homepage article list size, 0 to hide list in homepage
+homepageArticleCount: 3
+
 # Google analytics
 google_analytics: false
 # Baidu tongji
