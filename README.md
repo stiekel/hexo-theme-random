@@ -164,6 +164,15 @@ Just add the key or code after the ':'.
 
 The following settings is not prerequisite.
 
+### Show latest articles in homepage
+
+Homepage did NOT show latest article links by default, if you want show latest articles in homepage, you need to add `homepageArticleCount` in theme or site config, `0` to hide latest article links.
+
+```yml
+# show latest 3 articles in homepage
+homepageArticleCount: 3
+```
+
 ### Background image source config
 
 The background image use [unsplash](https://source.unsplash.com/) as default, but you can use your custom pictures.
