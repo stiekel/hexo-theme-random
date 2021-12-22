@@ -30,6 +30,9 @@
             {% endif %}
           {% endfor %}
         </div>
+        <div class="show-all-link">
+          <a href="/archives">{{__('show_all')}} >>></a>
+        </div>
       </div>
       {% endif %}
     </div>
