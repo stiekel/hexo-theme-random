@@ -35,7 +35,8 @@
         </li>
       {% endfor %}
     </ul>
-    {% for postItem in site.posts.toArray() %}
+    {% set allPosts = site.posts.sort('date', 'desc') %}
+    {% for postItem in allPosts %}
       {% set isShow = false %}
       {% for cat in postItem.categories %}
         {% if cat.name === page.category %}

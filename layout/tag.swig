@@ -3,7 +3,8 @@
 {% block body %}
   <div id="tag">
     <h1>{{ page.tag }}</h1>
-    {% for postItem in site.posts.toArray() %}
+    {% set allPosts = site.posts.sort('date', 'desc') %}
+    {% for postItem in allPosts %}
       {% set isShow = false %}
       {% for tag in postItem.tags %}
         {% if tag.name === page.tag %}
