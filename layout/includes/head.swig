@@ -42,5 +42,8 @@
   {% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
   {{ css(theme.stylesheets) }}
   {% endif %}
+  {% if page.comments && (theme.gitalk.enable) %}
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  {% endif %}
 </head>
 <body>

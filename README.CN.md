@@ -127,7 +127,7 @@ social:
 
 ## 第三方服务的配置
 
-本主题支持 [Google Analytics](https://www.google.com/analytics/) / [百度统计](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [友言](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/) / [Valine](https://valine.js.org/en/index.html)，即可以在主题配置文件中设置，也可以在博客的主配置文件中设置，增加项目如下：
+本主题支持 [Google Analytics](https://www.google.com/analytics/) / [百度统计](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [友言](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/) / [Valine](https://valine.js.org/en/index.html) / [gitalk](https://github.com/gitalk/gitalk)，即可以在主题配置文件中设置，也可以在博客的主配置文件中设置，增加项目如下：
 
 ```yml
 # Google analytics
@@ -158,6 +158,12 @@ valine:
   notify: true # valine mail notify (true/false) 
   lang: en
   visit_analytics: true
+gitalk:
+  enable: false
+  clientID: clientID
+  clientSecret: clientSecret
+  repo: gitalk-comments
+  owner: github-username
 ```
 
 对应各个服务的 key 或者 code，直接添加在冒号之后即可。

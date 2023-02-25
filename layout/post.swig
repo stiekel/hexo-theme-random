@@ -50,4 +50,7 @@
   {% endif %}
   {% include 'includes/pagination.swig' %}
   {% include 'includes/jiathis.swig' %}
+  {% if page.comments && (theme.gitalk.enable) %}
+    {% include 'includes/gitalk.swig' %}
+  {% endif %}
 {% endblock %}

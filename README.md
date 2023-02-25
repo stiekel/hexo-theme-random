@@ -125,7 +125,7 @@ social:
 
 ## Third party Service
 
-Random support [Google Analytics](https://www.google.com/analytics/) / [Baidu Tongji](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [Uyan](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/) / [Valine](https://valine.js.org/en/index.html), You can config these in theme config file or hexo main config file:
+Random support [Google Analytics](https://www.google.com/analytics/) / [Baidu Tongji](http://tongji.baidu.com/web/welcome/login) / [Disqus](https://disqus.com/) / [Uyan](http://www.uyan.cc/) / [JiaThis](http://www.jiathis.com/) / [Valine](https://valine.js.org/en/index.html) / [gitalk](https://github.com/gitalk/gitalk), You can config these in theme config file or hexo main config file:
 
 ```yml
 # Google analytics
@@ -156,6 +156,13 @@ valine:
   notify: true # valine mail notify (true/false) 
   lang: en
   visit_analytics: true
+
+gitalk:
+  enable: false
+  clientID: clientID
+  clientSecret: clientSecret
+  repo: gitalk-comments
+  owner: github-username
 ```
 
 Just add the key or code after the ':'.

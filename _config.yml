@@ -38,7 +38,7 @@ jiathisConfig:
   shortUrl: false
   hideMore: false
 
-# Valine 评论 https://valine.js.org
+# Valine comments https://valine.js.org
 valine:
   enable: false # set true if you want to use
   appId: #your leancloud appId
@@ -51,6 +51,14 @@ valine:
   notify: true # valine mail notify (true/false) 
   lang: en
   visit_analytics: true
+
+# gitalk comments https://github.com/gitalk/gitalk
+gitalk:
+  enable: false
+  clientID: clientID
+  clientSecret: clientSecret
+  repo: gitalk-comments
+  owner: github-username
 
 # Miscelaneous
 favicon: /hollow.ico
