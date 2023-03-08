@@ -75,7 +75,7 @@ stylesheets:
 
 # scripts loaded in the end of the body
 scripts:
-- /js/jquery-2.2.3.min.js
+- /js/jquery-3.6.4.min.js
 - /js/vegas.min.js
 - /js/random.js
 - /js/highlight.pack.js
