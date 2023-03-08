@@ -2,7 +2,7 @@
 <div class="random-center hide-area">
   <div id="random-index">
     <div class="center-field">
-      <img class="avatar" src="{{ url_for(config.avatar || theme.avatar) }}" width=120 height=120 onClick="openUserCard()">
+      <img class="avatar" alt="blog avatar" src="{{ url_for(config.avatar || theme.avatar) }}" width=120 height=120 onClick="openUserCard()">
     </div>
     <div class="center-field">
       <div class="title" onClick="openUserCard()">{{ config.title }}</div>
