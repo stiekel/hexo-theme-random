@@ -1,81 +1,81 @@
 
-# html lang
-language: zh-CN
+# html lang   # HTML lang#html lang #html lang
+language: zh-CN   语言   语言:应用:应用
 
-# main menu navigation
-menu:
-  Home: index.html
-  Archives: archives
-  Tags: tags
-  Categories: categories
-  About: about
+# main menu navigation   #主菜单导航
+menu   菜单:
+  Home: index.html      : index . html: index . htmlHome: index.html: index。Html: index。超文本标记语言
+  Archives: archives   档案   档案:档案:档案
+  Tags: tags   标签   标签:标签:标签
+  Categories: categories   类别   类别:类别:类别
+  About: about   关于   关于::
   Github: https://github.com/stiekel
 
-social:
+social   社会:
   GitHub: https://github.com/stiekel
-  Weibo: http://weibo.com/sidcn
+  Weibo: http微博微博:http://weibo.com/sidcn:http://weibo.com/sidcn://weibo.com/sidcn
   M: histkc@gmail.com
 
-# homepage article list size, 0 to hide list in homepage
+# homepage article list size, 0 to hide list in homepage#主页文章列表大小，0隐藏列表在主页
 homepageArticleCount: 3
 
-# Google analytics
-google_analytics: false
-# Baidu tongji
-baidu_analytics: false
+# Google analytics   #谷歌分析
+google_analytics: false   假Google_analytics: false假
+# Baidu tongji   # 百度通记
+baidu_analytics: false   假百度分析:假假
 # Disqus
 disqus_shortname:
 # Uyan
 uyan_id:
 # jiaThis id
-# if you want to change the style of jiaThis, please go to chage the following file:
+# if you want to change the style of jiaThis, please go to chage the following file:#如果您想更改jiaThis的样式，请转到更改以下文件:
 # theme/random/layouts/includes/jiathis.swig
 jiaThis_uid: 
 jiathisConfig:
-  data_track_clickback: true
-  summary: ""
-  showClose: true
-  shortUrl: false
-  hideMore: false
+  data_track_clickback: true   真正的
+  summary: ""   ＂＂
+  showClose: true   真正的
+  shortUrl: false   假
+  hideMore: false   假
 
 # Valine comments https://valine.js.org
-valine:
-  enable: false # set true if you want to use
+valine   缬氨酸:
+  enable: false 启用:false #设置为true如果你想使用# set true if you want to use
   appId: #your leancloud appId
   appKey: #your leancloud appKey
   guest_info: nick,mail,link #valine comment header info
   placeholder: # valine comment input placeholder(like: Please leave your footprints )
   avatar: robohash # gravatar style https://valine.js.org/avatar
   pageSize: 10 # comment list page size
-  verify: false # valine verify code (true/false)
-  notify: true # valine mail notify (true/false) 
-  lang: en
-  visit_analytics: true
+  verify: false 验证:false # valine验证码(true/false)# valine verify code (true/false)
+  notify: true 通知:true # valine邮件通知(true/false)# valine mail notify (true/false) 
+  lang: en   长:
+  visit_analytics: true   真正的
 
-# gitalk comments https://github.com/gitalk/gitalk
-gitalk:
-  enable: false
+# gitalk comments https://github.com/gitalk/gitalk# gitalk评论https://github.com/gitalk/gitalk
+gitalk   奇塔克:
+  enable   启用: false   假
   clientID: clientID
   clientSecret: clientSecret
-  repo: gitalk-comments
-  owner: github-username
+  repo   回购: gitalk-comments   回购:gitalk-comments
+  owner   老板: github-username   老板:github-username
 
 # Miscelaneous
-favicon: /hollow.ico
+favicon   的图标: /hollow.ico   标识:/ hollow.ico
 
 # stylesheets loaded in the <head>
-stylesheets:
-- /css/random.css
-- /css/vegas.min.css
-- /css/highlight-railscasts.css
-- /css/jquery.fancybox.css
-- /css/iconfont/iconfont.css
-- /css/jquery.fancybox-thumbs.css
-- /css/plyr.css
+stylesheets   样式表:
+- /css/random.css   ——/ css / random.css
+- /css/vegas.min.css   ——/ css / vegas.min.css
+- /css/highlight-railscasts.css——/ css / highlight-railscasts.css——/ css/highlight-railscast .css
+- /css/jquery.fancybox.css——/ css / jquery.fancybox.css
+- /css/iconfont/iconfont.css- / css / iconfont iconfont.css
+- /css/jquery.fancybox-thumbs.css——/ css / jquery.fancybox-thumbs.css—/ css/jquery.fancybox-thumbs.css——/ css/jquery.fancybox-thumbs.css
+- /css/plyr.css   ——/ css / plyr.css
 
-# scripts loaded in the end of the body
-scripts:
-- /js/jquery-3.6.4.min.js
+# scripts loaded in the end of the body# scripts加载在正文的末尾
+scripts   脚本:
+- /js/jquery-3.6.4.min.jsjquery - / js / 3 .6.4.min.js
 - /js/vegas.min.js
 - /js/random.js
 - /js/highlight.pack.js
@@ -87,12 +87,12 @@ scripts:
 # ignore visitor statistics on special server, for example on you local computer or debugging server
 isIgnoreSpecialHostVisitor: true
 ignoreHostList:
-  - localhost
+  - localhost   ——本地主机
   - 127.0.0.1
 
 # if you want to turn off the background images, pleaase set this value as true
 turnoffBackgroundImage: 
-  # home page
+     #首页# home page
   index: false
   # arcihve / categories / tags
   post_list: false
