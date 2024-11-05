@@ -1,64 +1,64 @@
 
-# html lang
-language: zh-CN
+# html lang   # HTML lang
+language   语言: zh-CN   语言   语言:应用:应用
 
-# main menu navigation
-menu:
-  Home: index.html
-  Archives: archives
-  Tags: tags
-  Categories: categories
-  About: about
+# main menu navigation   #主菜单导航
+menu   菜单:
+  Home   首页: index.html      : index . html: index . html
+  Archives   档案: archives   档案   档案:档案:档案
+  Tags   标签: tags   标签   标签:标签:标签
+  Categories   类别: categories   类别   类别:类别:类别
+  About   关于: about   关于   关于::
   Github: https://github.com/stiekel
 
-social:
+social   社会:
   GitHub: https://github.com/stiekel
-  Weibo: http://weibo.com/sidcn
-  M: histkc@gmail.com
+  Weibo   微博: http微博微博:http://weibo.com/sidcn:http://weibo.com/sidcn://weibo.com/sidcn
+  M   米: histkc@gmail.com
 
-# homepage article list size, 0 to hide list in homepage
+# homepage article list size, 0 to hide list in homepage#主页文章列表大小，0隐藏列表在主页
 homepageArticleCount: 3
 
-# Google analytics
-google_analytics: false
-# Baidu tongji
-baidu_analytics: false
+# Google analytics   #谷歌分析
+google_analytics: false   假
+# Baidu tongji   # 百度通记
+baidu_analytics: false   假
 # Disqus
 disqus_shortname:
 # Uyan
 uyan_id:
 # jiaThis id
-# if you want to change the style of jiaThis, please go to chage the following file:
-# theme/random/layouts/includes/jiathis.swig
+# if you want to change the style of jiaThis, please go to chage the following file:#如果您想更改jiaThis的样式，请转到更改以下文件:
+# theme/random/layouts/includes/jiathis.swig#主题/随机/布局包括/ jiathis.swig
 jiaThis_uid: 
 jiathisConfig:
-  data_track_clickback: true
-  summary: ""
-  showClose: true
-  shortUrl: false
-  hideMore: false
+  data_track_clickback: true   真正的
+  summary   总结: ""   ＂＂
+  showClose: true   真正的
+  shortUrl: false   假
+  hideMore: false   假
 
-# Valine comments https://valine.js.org
-valine:
-  enable: false # set true if you want to use
-  appId: #your leancloud appId
-  appKey: #your leancloud appKey
-  guest_info: nick,mail,link #valine comment header info
-  placeholder: # valine comment input placeholder(like: Please leave your footprints )
-  avatar: robohash # gravatar style https://valine.js.org/avatar
-  pageSize: 10 # comment list page size
-  verify: false # valine verify code (true/false)
-  notify: true # valine mail notify (true/false) 
-  lang: en
-  visit_analytics: true
+# Valine comments https://valine.js.org# Valine评论https://valine.js.org
+valine   缬氨酸:
+  enable   启用: false 启用:false #设置为true如果你想使用# set true if you want to use#设置为true，如果你想使用
+  appId: #your leancloud appId   #你的leancloud应用
+  appKey: #your leancloud appKey   #你的leancloud appKey
+  guest_info: nick,mail,link Guest_info: nick,mail,link #valine comment header info#valine comment header info#valine注释头信息
+  placeholder   占位符: # valine comment input placeholder(like: Please leave your footprints )# valine注释输入占位符(如:请留下您的足迹)
+  avatar   《阿凡达》: robohash 头像：Robohash # Gravatar Style https://valine.js.org/avatar# gravatar style https://valine.js.org/avatar
+  pageSize   页大小: 10 #评论列表页面大小# comment list page size#评论列表页面大小
+  verify   验证: false 验证:false # valine验证码(true/false)# valine verify code (true/false)# valine验证码(true/false)
+  notify   通知: true 通知:true # valine邮件通知(true/false)# valine mail notify (true/false) # valine邮件通知(true/false)
+  lang   朗: en   长:
+  visit_analytics: true   真正的
 
-# gitalk comments https://github.com/gitalk/gitalk
-gitalk:
-  enable: false
+# gitalk comments https://github.com/gitalk/gitalk# gitalk评论https://github.com/gitalk/gitalk
+gitalk   奇塔克:
+  enable   启用: false   假
   clientID: clientID
   clientSecret: clientSecret
-  repo: gitalk-comments
-  owner: github-username
+  repo   回购: gitalk-comments   回购:gitalk-comments
+  owner   老板: github-username   老板:github-username
 
 # Miscelaneous
 favicon: /hollow.ico
