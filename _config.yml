@@ -102,26 +102,24 @@ turnoffBackgroundImage:
 backgroundColor: 34495E
  
 backgroundImages:
-# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__
-# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__
-# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__
-# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__
-# - http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
-
+  - https://unsplash.it/__width__/__height__?random&t=6&gravity=center
+  - https://unsplash.it/__width__/__height__?random&t=6&gravity=center
+  - https://unsplash.it/__width__/__height__?random&t=6&gravity=center
+  - https://unsplash.it/__width__/__height__?random&t=6&gravity=center
+  - https://unsplash.it/__width__/__height__?random&t=6&gravity=center
 vegasConfig:
   # more about config http://vegas.jaysalvat.com/documentation/settings/
   # animation: 'random'
   # transition: 'swirlRight'
   preload­Image: true
   transition:
-    # - slideLeft2
-    # - slideRight2
-    # - zoomIn
-    # - swirLeft
-    # - swirRight
+    - slideLeft2
+    - slideRight2
+    - swirLeft
+    - swirRight
     - flash
-    # - flash2
-  timer: true
+  animation­Duration: 100
+  timer: false
   delay: 10000
   shuffle: true
   count: 12
@@ -132,7 +130,7 @@ unsplashConfig:
   gravity: 'center' # north, east, south, west, center
   # greyscale: true
 
-avatar: https://avatars2.githubusercontent.com/u/2735087?s=60&u=775d4033139cae6b23c593bcf59fa433224ba4e3&v=4
+avatar: images/blog-avatar.png
 
 # do not like fancybox, set this as false, this will turn it off
 fancybox: true

@@ -199,11 +199,11 @@ unsplashConfig:
 
 ```yml
 backgroundImages:
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__
-- http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__
+- https://unsplash.it/__width__/__height__?random&t=6&gravity=center
+- https://unsplash.it/__width__/__height__?random&t=6&gravity=center
+- https://unsplash.it/__width__/__height__?random&t=6&gravity=center
+- https://unsplash.it/__width__/__height__?random&t=6&gravity=center
+- https://unsplash.it/__width__/__height__?random&t=6&gravity=center
 ```
 
 URL 中的 `__width__` 和 `__height__` ，在请求时，会替换为浏览器的宽度和高度值，如果你的图片服务器支持按分辨率裁剪，那就可以用得上。
