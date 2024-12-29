@@ -32,8 +32,9 @@ var isTriggerAnalytics = !( {{ JSON.stringify(config.isIgnoreSpecialHostVisitor 
 {% if theme.fancybox || config.fancybox %}
   // fancybox
   var backgroundImages = [];
-  {% if theme.backgroundImages %}
-    {% for i in theme.backgroundImages %}
+  {% set imgs = config.backgroundImages || theme.backgroundImages %}
+  {% if imgs %}
+    {% for i in imgs %}
       backgroundImages.push('{{ i }}');
     {% endfor %}
   {% endif %}
