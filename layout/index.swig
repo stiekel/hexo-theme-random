@@ -31,7 +31,7 @@
           {% endfor %}
         </div>
         <div class="show-all-link">
-          <a href="/archives">{{__('show_all')}} >>></a>
+          <a href="{{ full_url_for('/archives', {relative: false}) }}">{{__('show_all')}} >>></a>
         </div>
       </div>
       {% endif %}
